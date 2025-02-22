@@ -1,17 +1,17 @@
 ---
 # Display name
-title: 吳健雄
+title: Boris Blagov
 
 # Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
+# name_pronunciation: Chien Shiung Wu
 
 # Full name (for SEO)
-first_name: Shiung Wu
-last_name: Chien
+first_name: Boris
+last_name: Blagov
 
 # Status emoji
 status:
-  icon: ☕️
+  icon: 
 
 # Is this the primary user of the site?
 superuser: true
@@ -20,103 +20,98 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Chief Scientist
+role: Economist
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: OpenAI
-    url: https://openai.com/
+  - name: RWI -- Leibniz Institute for Economics Research
+    url: http://www.rwi-essen.de/
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:your-email@example.com'
+    url: 'mailto:boris.blagov@rwi-essen.de'
     label: E-mail Me
-  - icon: brands/x
-    url: https://twitter.com/GetResearchDev
-  - icon: brands/instagram
-    url: https://www.instagram.com/
   - icon: brands/github
-    url: https://github.com/gcushen
+    url: https://github.com/borisblagov/
   - icon: brands/linkedin
-    url: https://www.linkedin.com/
+    url: https://de.linkedin.com/in/borisblagov
   - icon: academicons/google-scholar
-    url: https://scholar.google.com/
+    url: https://scholar.google.de/citations?hl=en&user=p1biOaIAAAAJ
   - icon: academicons/orcid
     url: https://orcid.org/
+  - icon: academicons/mendeley
+    url: https://www.instagram.com/
 
 interests:
-  - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
+  - Applied Macroeconomics
+  - Forecasting
+  - Econometrics
+  - Bayesian Methods
+  - Teaching
 
 education:
-  - area: PhD Artificial Intelligence
-    institution: Stanford University
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
-    button:
-      text: 'Read Thesis'
-      url: 'https://example.com'
-  - area: MEng Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 3.8/4.0
-
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - area: BSc Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 3.4/4.0
-      
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - area: PhD in Economics
+    institution: Hamburg Graduate School of Economics at the University of Hamburg
+    year: 2015
+  - area: MSc in Economics
+    institution: University of Bonn
+    year: 2011
+  - area: BSc Economics and Management
+    institution: University of Magdeburg
+    year: 2008
+  
+    
 work:
-  - position: Director of Cloud Infrastructure
-    company_name: GenCoin
+  - position: Researcher
+    company_name: RWI -- Leibniz Institute for Economic Research
     company_url: ''
     company_logo: ''
-    date_start: 2021-01-01
+    date_start: 2016-08-01
     date_end: ''
     summary: |2-
-      Responsibilities include:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - position: Backend Software Engineer
-    company_name: X
+#      Responsibilities include:
+#      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+#      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+#      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - position: Researcher
+    company_name: Hamburg University
     company_url: ''
     company_logo: ''
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+    date_start: 2011-12-01
+    date_end: 2015-09-30
     summary: |
-      Responsibilities include:
-      - Migrated infrastructure to a new data center
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+#      Responsibilities include:
+#      - Migrated infrastructure to a new data center
+#      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+#      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - position: Visiting Researcher 
+    company_name: Eesti Pank, Central Bank of Estonia
+    company_url: ''
+    company_logo: ''
+    date_start: 2013-09-01
+    date_end: 2013-09-14
+    summary: |
+
+  - position: Intern
+    company_name: Bulgarian National Bank
+    company_url: ''
+    company_logo: ''
+    date_start: 2010-03-01
+    date_end: 2010-04-01
+    summary: |
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
 skills:
   - name: Technical Skills
     items:
-      - name: Python
+      - name: Matlab
         description: ''
         percent: 80
         icon: code-bracket
-      - name: Data Science
+      - name: Economic Modelling
         description: ''
         percent: 100
         icon: chart-bar
@@ -128,59 +123,40 @@ skills:
     color: '#eeac02'
     color_border: '#f0bf23'
     items:
-      - name: Hiking
+      - name: Running
         description: ''
         percent: 60
         icon: person-simple-walk
-      - name: Cats
+      - name: Gaming
         description: ''
         percent: 100
-        icon: cat
+        icon: joystick
       - name: Photography
         description: ''
         percent: 80
         icon: camera
 
 languages:
+  - name: Bulgarian
+    percent: 99
   - name: English
-    percent: 100
-  - name: Chinese
-    percent: 75
-  - name: Portuguese
-    percent: 25
+    percent: 98
+  - name: German 
+    percent: 97
+  - name: Spanish
+    percent: 1
 
 # Awards.
 #   Add/remove as many awards below as you like.
 #   Only `title`, `awarder`, and `date` are required.
 #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
-awards:
-  - title: Neural Networks and Deep Learning
-    url: https://www.coursera.org/learn/neural-networks-deep-learning
-    date: '2023-11-25'
-    awarder: Coursera
-    icon: coursera
-    summary: |
-      I studied the foundational concept of neural networks and deep learning. By the end, I was familiar with the significant technological trends driving the rise of deep learning; build, train, and apply fully connected deep neural networks; implement efficient (vectorized) neural networks; identify key parameters in a neural network’s architecture; and apply deep learning to your own applications.
-  - title: Blockchain Fundamentals
-    url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-    date: '2023-07-01'
-    awarder: edX
-    icon: edx
-    summary: |
-      Learned:
-      - Synthesize your own blockchain solutions
-      - Gain an in-depth understanding of the specific mechanics of Bitcoin
-      - Understand Bitcoin’s real-life applications and learn how to attack and destroy Bitcoin, Ethereum, smart contracts and Dapps, and alternatives to Bitcoin’s Proof-of-Work consensus algorithm
-  - title: 'Object-Oriented Programming in R'
-    url: https://www.datacamp.com/courses/object-oriented-programming-with-s3-and-r6-in-r
-    certificate_url: https://www.datacamp.com
-    date: '2023-01-21'
-    awarder: datacamp
-    icon: datacamp
-    summary: |
-      Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
+
 ---
 
 ## About Me
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+I am an economist and a professional forecaster for [RWI -- Leibniz Institute of Economic Research](http://en.rwi-essen.de/)  in Essen, Germany at the division [Macroeconomics and Public Finance](http://en.rwi-essen.de/forschung-und-beratung/wachstum-konjunktur-oeffentliche-finanzen/).
+
+I am part of the junior faculty of the [Ruhr Graduate School of Economics](http://rgs-econ.org/) and a research fellow of [DocMA](https://docma.tu-dortmund.de/team/research-fellows/) - an interdisciplinary research project in which algorithms process huge amounts of newspaper articles and texts of social media in order to recognize patterns.
+
+On this page you will find my [research](/#papers), [forecasts](/#forecasts), [replication codes](/#publications), and previous [teaching materials](#teaching).

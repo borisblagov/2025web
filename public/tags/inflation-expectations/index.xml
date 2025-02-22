@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Inflation Expectations | Hugo Academic CV Theme</title>
+    <link>http://localhost:1313/tags/inflation-expectations/</link>
+      <atom:link href="http://localhost:1313/tags/inflation-expectations/index.xml" rel="self" type="application/rss+xml" />
+    <description>Inflation Expectations</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 Mar 2021 11:00:00 +0100</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu12593946659221199760.png</url>
+      <title>Inflation Expectations</title>
+      <link>http://localhost:1313/tags/inflation-expectations/</link>
+    </image>
+    
+    <item>
+      <title>Monetary policy uncertainty and inflation expectations</title>
+      <link>http://localhost:1313/publication/2021_rep_infexp/</link>
+      <pubDate>Mon, 01 Mar 2021 11:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/publication/2021_rep_infexp/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

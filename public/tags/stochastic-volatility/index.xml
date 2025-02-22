@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Stochastic Volatility | Hugo Academic CV Theme</title>
+    <link>http://localhost:1313/tags/stochastic-volatility/</link>
+      <atom:link href="http://localhost:1313/tags/stochastic-volatility/index.xml" rel="self" type="application/rss+xml" />
+    <description>Stochastic Volatility</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 13 May 2022 11:00:00 +0100</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu12593946659221199760.png</url>
+      <title>Stochastic Volatility</title>
+      <link>http://localhost:1313/tags/stochastic-volatility/</link>
+    </image>
+    
+    <item>
+      <title>Financial integration or financial fragmentation? A euro area perspective</title>
+      <link>http://localhost:1313/publication/2022_em/</link>
+      <pubDate>Fri, 13 May 2022 11:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/publication/2022_em/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Monetary policy uncertainty and inflation expectations</title>
+      <link>http://localhost:1313/publication/2021_rep_infexp/</link>
+      <pubDate>Mon, 01 Mar 2021 11:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/publication/2021_rep_infexp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Exchange rate uncertainty and import prices in the euro area</title>
+      <link>http://localhost:1313/publication/2019_eru/</link>
+      <pubDate>Fri, 16 Aug 2019 11:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/publication/2019_eru/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Financial crises and time-varying risk premia in a small open economy: a Markov-switching DSGE model for Estonia</title>
+      <link>http://localhost:1313/publication/2018_ee/</link>
+      <pubDate>Wed, 02 May 2018 11:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/publication/2018_ee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The credibility of Hong Kong&#39;s currency board system: looking through the prism of MS‐VAR models with time‐varying transition probabilities</title>
+      <link>http://localhost:1313/publication/2016_ob/</link>
+      <pubDate>Wed, 06 Jul 2016 11:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/publication/2016_ob/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

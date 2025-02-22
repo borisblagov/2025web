@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Report | Hugo Academic CV Theme</title>
+    <link>http://localhost:1313/publication_types/report/</link>
+      <atom:link href="http://localhost:1313/publication_types/report/index.xml" rel="self" type="application/rss+xml" />
+    <description>Report</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 14 Dec 2024 10:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu12593946659221199760.png</url>
+      <title>Report</title>
+      <link>http://localhost:1313/publication_types/report/</link>
+    </image>
+    
+    <item>
+      <title>World Economic Forecast Winter 2024: Global Economy Grows Moderately Amid High Political Uncertainty</title>
+      <link>http://localhost:1313/forecast/forecast_kb_24_4/</link>
+      <pubDate>Sat, 14 Dec 2024 10:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/forecast/forecast_kb_24_4/</guid>
+      <description>&lt;p&gt;The global economy maintained its solid growth trajectory this summer, driven primarily by the strong expansion in the USA. Global industrial production picked up significantly in spring and summer, particularly in Asia. Parallel to industrial production, global trade in goods also expanded noticeably until the summer. However, current data suggests that the upturn in industrial production and in global trade is unlikely to
+persist. Industrial production and global trade fell in September. The global purchasing managers&amp;rsquo; index for the manufacturing sector also suggests that the fundamental weakness in industry is continuing.
+The disinflation process has not progressed any further recently. Prices are rising sharply in the services sector, which is why core inflation excluding energy and food is stubbornly persistent.&lt;/p&gt;
+&lt;p&gt;The global economy is likely to maintain its moderate growth trajectory in the forecast period. The still unfavourable leading indicators in industry suggest that services will initially remain the main driver of the economy. Only gradually will industry pick up as interest rates fall and investment picks up. The geopolitical and trade policy risks are high. Trade policy uncertainties are currently particularly high. It is currently unclear whether the additional tariffs announced by the future US administration will actually be introduced and, if so, to what extent, and which products will be affected. Possible countermeasures by trading partners are also not yet foreseeable. In any case, an expansion of the restrictions would have a negative impact on internal trade and thus also jeopardise the recovery of global industrial production.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Economic Knock-On Effects of Russia’s Geopolitical Risk on Advanced Economies: A Global VAR Approach</title>
+      <link>http://localhost:1313/publication/2024_bfd/</link>
+      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/2024_bfd/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog | Hugo Academic CV Theme</title>
+    <link>http://localhost:1313/post/</link>
+      <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <description>Blog</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 27 Oct 3023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu12593946659221199760.png</url>
+      <title>Blog</title>
+      <link>http://localhost:1313/post/</link>
+    </image>
+    
+    <item>
+      <title>📈 Communicate your results effectively with the best data visualizations</title>
+      <link>http://localhost:1313/post/data-visualization/</link>
+      <pubDate>Wed, 25 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/data-visualization/</guid>
+      <description>&lt;p&gt;Hugo Blox is designed to give technical content creators a seamless experience. You can focus on the content and Hugo Blox handles the rest.&lt;/p&gt;
+&lt;p&gt;Use popular tools such as Plotly, Mermaid, and data frames.&lt;/p&gt;
+&lt;h2 id=&#34;charts&#34;&gt;Charts&lt;/h2&gt;
+&lt;p&gt;Hugo Blox supports the popular &lt;a href=&#34;https://plot.ly/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Plotly&lt;/a&gt; format for interactive data visualizations. With Plotly, you can design almost any kind of visualization you can imagine!&lt;/p&gt;
+&lt;p&gt;Save your Plotly JSON in your page folder, for example &lt;code&gt;line-chart.json&lt;/code&gt;, and then add the &lt;code&gt;{{&amp;lt; chart data=&amp;quot;line-chart&amp;quot; &amp;gt;}}&lt;/code&gt; shortcode where you would like the chart to appear.&lt;/p&gt;
+&lt;p&gt;Demo:&lt;/p&gt;
+
+
+
+
+&lt;div id=&#34;chart-378269145&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;script&gt;
+  async function fetchChartJSON() {
+    console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
+    const response = await fetch(&#39;.\/mynew.json&#39;);
+    return await response.json();
+  }
+
+  (function() {
+    let a = setInterval( function() {
+      if ( typeof window.Plotly === &#39;undefined&#39; ) {
+        console.debug(&#39;Plotly not loaded yet...&#39;)
+        return;
+      }
+      clearInterval( a );
+
+      fetchChartJSON().then(chart =&gt; {
+        console.debug(&#39;Plotting chart...&#39;)
+        window.Plotly.newPlot(&#39;chart-378269145&#39;, chart.data, chart.layout, {responsive: true});
+      });
+    }, 500 );
+  })();
+&lt;/script&gt;
+
+&lt;p&gt;You might also find the &lt;a href=&#34;http://plotly-json-editor.getforge.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Plotly JSON Editor&lt;/a&gt; useful.&lt;/p&gt;
+&lt;h2 id=&#34;diagrams&#34;&gt;Diagrams&lt;/h2&gt;
+&lt;p&gt;Hugo Blox supports the &lt;em&gt;Mermaid&lt;/em&gt; Markdown extension for diagrams.&lt;/p&gt;
+&lt;p&gt;An example &lt;strong&gt;flowchart&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```mermaid
+graph TD
+A[Hard] --&amp;gt;|Text| B(Round)
+B --&amp;gt; C{Decision}
+C --&amp;gt;|One| D[Result 1]
+C --&amp;gt;|Two| E[Result 2]
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;renders as&lt;/p&gt;
+&lt;div class=&#34;mermaid&#34;&gt;graph TD
+A[Hard] --&gt;|Text| B(Round)
+B --&gt; C{Decision}
+C --&gt;|One| D[Result 1]
+C --&gt;|Two| E[Result 2]
+&lt;/div&gt;
+&lt;p&gt;An example &lt;strong&gt;sequence diagram&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```mermaid
+sequenceDiagram
+Alice-&amp;gt;&amp;gt;John: Hello John, how are you?
+loop Healthcheck
+    John-&amp;gt;&amp;gt;John: Fight against hypochondria
+end
+Note right of John: Rational thoughts!
+John--&amp;gt;&amp;gt;Alice: Great!
+John-&amp;gt;&amp;gt;Bob: How about you?
+Bob--&amp;gt;&amp;gt;John: Jolly good!
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;renders as&lt;/p&gt;
+&lt;div class=&#34;mermaid&#34;&gt;sequenceDiagram
+Alice-&gt;&gt;John: Hello John, how are you?
+loop Healthcheck
+    John-&gt;&gt;John: Fight against hypochondria
+end
+Note right of John: Rational thoughts!
+John--&gt;&gt;Alice: Great!
+John-&gt;&gt;Bob: How about you?
+Bob--&gt;&gt;John: Jolly good!
+&lt;/div&gt;
+&lt;p&gt;An example &lt;strong&gt;class diagram&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```mermaid
+classDiagram
+Class01 &amp;lt;|-- AveryLongClass : Cool
+Class03 *-- Class04
+Class05 o-- Class06
+Class07 .. Class08
+Class09 --&amp;gt; C2 : Where am i?
+Class09 --* C3
+Class09 --|&amp;gt; Class07
+Class07 : equals()
+Class07 : Object[] elementData
+Class01 : size()
+Class01 : int chimp
+Class01 : int gorilla
+Class08 &amp;lt;--&amp;gt; C2: Cool label
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;renders as&lt;/p&gt;
+&lt;div class=&#34;mermaid&#34;&gt;classDiagram
+Class01 &lt;|-- AveryLongClass : Cool
+Class03 *-- Class04
+Class05 o-- Class06
+Class07 .. Class08
+Class09 --&gt; C2 : Where am i?
+Class09 --* C3
+Class09 --|&gt; Class07
+Class07 : equals()
+Class07 : Object[] elementData
+Class01 : size()
+Class01 : int chimp
+Class01 : int gorilla
+Class08 &lt;--&gt; C2: Cool label
+&lt;/div&gt;
+&lt;p&gt;An example &lt;strong&gt;state diagram&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```mermaid
+stateDiagram
+[*] --&amp;gt; Still
+Still --&amp;gt; [*]
+Still --&amp;gt; Moving
+Moving --&amp;gt; Still
+Moving --&amp;gt; Crash
+Crash --&amp;gt; [*]
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;renders as&lt;/p&gt;
+&lt;div class=&#34;mermaid&#34;&gt;stateDiagram
+[*] --&gt; Still
+Still --&gt; [*]
+Still --&gt; Moving
+Moving --&gt; Still
+Moving --&gt; Crash
+Crash --&gt; [*]
+&lt;/div&gt;
+&lt;h2 id=&#34;data-frames&#34;&gt;Data Frames&lt;/h2&gt;
+&lt;p&gt;Save your spreadsheet as a CSV file in your page&amp;rsquo;s folder and then render it by adding the &lt;em&gt;Table&lt;/em&gt; shortcode to your page:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{{&amp;lt;&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;table&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;path&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;results.csv&amp;#34;&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;header&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;true&amp;#34;&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;caption&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;Table 1: My results&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;gt;}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;renders as&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;table class=&#34;table-auto w-full&#34;&gt;
+  
+    
+    
+    &lt;thead&gt;
+      &lt;tr&gt;  &lt;th class=&#34;border-b dark:border-slate-600 font-medium p-4 pt-0 pb-3 text-slate-400 dark:text-slate-200 text-left&#34;&gt;customer_id&lt;/th&gt;  &lt;th class=&#34;border-b dark:border-slate-600 font-medium p-4 pt-0 pb-3 text-slate-400 dark:text-slate-200 text-left&#34;&gt;score&lt;/th&gt;  &lt;/tr&gt;
+    &lt;/thead&gt;
+  
+  &lt;tbody&gt;
+  
+    &lt;tr&gt;
+      
+        
+          &lt;td data-table-dtype=&#34;number&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;1&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;number&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;0&lt;/td&gt;
+        
+      
+    &lt;/tr&gt;
+  
+    &lt;tr&gt;
+      
+        
+          &lt;td data-table-dtype=&#34;number&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;2&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;0.5&lt;/td&gt;
+        
+      
+    &lt;/tr&gt;
+  
+    &lt;tr&gt;
+      
+        
+          &lt;td data-table-dtype=&#34;number&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;3&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;number&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;1&lt;/td&gt;
+        
+      
+    &lt;/tr&gt;
+  
+  &lt;/tbody&gt;
+  
+    &lt;caption class=&#34;table-caption&#34;&gt;Table 1: My results&lt;/caption&gt;
+  
+&lt;/table&gt;
+
+&lt;h2 id=&#34;did-you-find-this-page-helpful-consider-sharing-it-&#34;&gt;Did you find this page helpful? Consider sharing it 🙌&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The effects of COVID-19 on the Italian economy</title>
+      <link>http://localhost:1313/post/2020_03_29/</link>
+      <pubDate>Mon, 23 Mar 2020 11:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2020_03_29/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Disclaimer: This is a loose translation of the analysis &amp;ldquo;The effects of COVID-19 on the Italian economy&amp;rdquo; which was published in the &lt;a href=&#34;https://www.side-iea.it/sites/side-iea.it/files/iceee2019lecce_final_program.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RWI Spring international forecast&lt;/a&gt;. The analysis was finalized on the 19th of March 2020 and therefore does not include newer developments. This translation is my own and is therefore not affiliated with RWI - Leibniz Institute for economic research in any way. All the errors are my own.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;Assuming that&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;production in Italy will fall by 20% and remain at that level for two months&lt;/li&gt;
+&lt;li&gt;International arrivals and overnight stays will decline by 75% (the rest attributed to essential travel)&lt;/li&gt;
+&lt;li&gt;Consumption will fall by 50% (proxied by new car registrations)
+we estimate that Italian GDP will contract by 2,4% instead of growing with 0,2%&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;
+&lt;p&gt;In the  we analysed the effects of nationwide lockdown in Italy on its economy. Italy was, at the time, the hardest hit economy by the new strand of coronavirus. The high number of deaths compared to the number of confirmed infections suggested that COVID-19 has remained undiscovered for some time. Thus, it may very well be that a portion of the population might be carrying the virus unbeknownst to them. Therefore, the Italian government introduced a number of stringent measures in order to contain the virus.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;On the 3-rd of March Italy ordered the temporary closure of schools and universities until 15 March. It is also advised to cancel or postpone all major public meetings until 3 April.&lt;/li&gt;
+&lt;li&gt;On the 8-th of March, large parts of northern Italy, such as Lombardy and 14 other provinces, were quarantined, also until 3rd of April. These measures were later extended to the whole country.&lt;/li&gt;
+&lt;li&gt;Since 11-th March all shops except grocery stores remain closed&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;After the publication of the forecast Italy has introduced a total lockdown of the country&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The measures are likely to have a massive impact on the Italian economy. In addition to quarantine, the tourism sector, which accounts for 13% of Italy&amp;rsquo;s GDP and employs 8 million people, will continue to suffer from the effects of the virus even after the quarantine measures have ended.&lt;/p&gt;
+&lt;h2 id=&#34;modelling-strategy&#34;&gt;Modelling strategy&lt;/h2&gt;
+&lt;p&gt;To estimate the economic effects of these drastic measures, we use a cutting edge econometric model, namely, a mixed-frequency VAR (MF-VAR) model analogous to Schorfheide and Song (2015) (for a brief description see also Döhrn et al. 2018).&lt;/p&gt;
+&lt;p&gt;We capture the effects in the following manner. First we choose a range of economic variables that cover all areas of the Italian economy where possible. Then&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Using data &lt;strong&gt;prior&lt;/strong&gt; to the outbreak we do a forecast for Gross domestic product and Personal consumption. This is our &lt;strong&gt;counterfactual scenario&lt;/strong&gt; - what would have happened if COVID-19 did not paralyse the economy.&lt;/li&gt;
+&lt;li&gt;Making an educated guess regarding the developments of key variables under the current circumstances, create a new forecast. This is our &lt;strong&gt;Covid-19 scenario&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The difference between the two is our expectation of the effects.&lt;/p&gt;
+&lt;h2 id=&#34;data&#34;&gt;Data&lt;/h2&gt;
+&lt;p&gt;The model includes three quarterly variables and twelve monthly indicators. These have been selected to cover all areas of the Italian economy where possible. Specifically, the following variables are used:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Production: GDP (quarterly), gross fixed capital formation (quarterly), industrial production and new orders&lt;/li&gt;
+&lt;li&gt;Survey-based measures:  IHS Markit Purchasing Managers Index, Economic Sentiment Index and Industrial Confidence Index&lt;/li&gt;
+&lt;li&gt;Preise: Consumer Price Index and Producer Price index&lt;/li&gt;
+&lt;li&gt;Labour market: Unemployment rate and Employment&lt;/li&gt;
+&lt;li&gt;Consumption: Private Consumption (quarterly), Retail Sales and New car registration&lt;/li&gt;
+&lt;li&gt;Tourism: Number of tourist arrivals and number of hotel nights
+Data used are from 2000 onwards. Monthly data are available until December 2019 and January 2020 respectively, survey results are already available until February 2020. Quarterly variables extend to the fourth quarter of 2019&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;establishing-the-counterfactual-scenario-without-covid-19&#34;&gt;Establishing the counterfactual scenario (without COVID-19)&lt;/h2&gt;
+&lt;p&gt;The available data do not currently cover the period from the outbreak of the COVID-19 epidemic in Italy. Therefore, the data are suitable for counterfactual nowcasting. We use the model to forecast all variables, which represent a hypothetical alternative scenario of a development that would have occurred if Italy had not been covered by COVID-19. The forecasts are shown in red on the figures below. Industrial production falls slightly in February, but then recovers again. The upward trend in tourist arrivals continues. The number of overnight stays is also gradually increasing. These forecasts, together with the already available strong growth in industrial production in January, suggest that GDP will expand by 0.2% in the first quarter. For the remainder of the forecast period, there will be a slower increase in overall economic activity for the rest of the year.  Overall, this alternative scenario results in &lt;strong&gt;an annual average increase in GDP of 0.2%&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;the-effects-of-covid-19-on-the-italian-economy&#34;&gt;The effects of COVID-19 on the Italian economy&lt;/h2&gt;
+&lt;p&gt;In view of the latest developments in Italy - confirmed COVID-19 cases in all regions, quarantine in Northern Italy and a general travel ban as well as the cancellation of major events and store closures - we assume the following assumptions regarding the current economic development&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The number of international arrivals and overnight stays will fall sharply by 75% for March and April and will not begin to recover until May. We attribute the remaining 25% of international arrivals to necessary travel.&lt;/li&gt;
+&lt;li&gt;The level of industrial production plummets, is 20% lower in March than in January, and remains unchanged in April.&lt;/li&gt;
+&lt;li&gt;Car registrations fall by 50% in March and, like industrial production, remain at this level for another month.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;We plot those assumptions on Figure 1.&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/post/2020_03_29/Counterfactual_monthly.png&#34;&gt;&lt;figcaption&gt;
+      &lt;h4&gt;Assumptions on the effects of COVID-19 on industrial production, new arrivals, overnight stays and car registrations (red) and conuterfactual scenario (blue).&lt;/h4&gt;
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Based on the experience of the quarantine measures taken in China (Wu &amp;amp; McGoogan 2020), we expect the situation to get better from May onwards. In the three months past May there will be a return to the original level of the four variables. In tourism, the level of both variables remains about 5% below the counterfactual scenario in the summer. With the help of an MF-VAR these variables are forecast for the period from October 2020 onwards. In Figure 1, the developments are shown in blue. An overshoot over the values of the counterfactual scenario is to be expected for industrial production and new car registrations.&lt;/p&gt;
+&lt;p&gt;Figure 2 shows the model forecasts for GDP and private consumption. If the virus had not spread, both aggregates would have risen at decreasing rates, but consistently. Under the assumptions made here, the spread of COVID-19 is likely to reduce real GDP and private consumption significantly in the first half of the year. In the second half of the year, expansion rates should then be well above potential rates due to catch-up effects. All in all, the overall economic activity in Italy is expected to decline by 2.4% this year. In contrast, GDP and consumer spending will rise by 0.2% in the alternative scenario, while private consumption is likely to decline by 0.9% in 2020. This results in a &lt;strong&gt;negative GDP effect of COVID-19 of about 2.6% on GDP&lt;/strong&gt; and &lt;strong&gt;1.1% on private consumption.&lt;/strong&gt;&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/post/2020_03_29/Counterfactual_quarterly.png&#34;&gt;&lt;figcaption&gt;
+      &lt;h4&gt;The effects of COVID-19 on Gross domestic product (left) and Personal consumption (right) in red versus the counterfactual scernaio in blue.&lt;/h4&gt;
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;This forecast is based on the key assumptions of fall in production by 20%, tourism by 75%, and consumption for larger assets such as cars by 50%. In the light of the current situation these values appear optimistic, thus we may observe an even sharper decline.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Presenting at the Eighth Italian  Congress of Econometrics and Empirical Economics</title>
+      <link>http://localhost:1313/post/2019_01_21/</link>
+      <pubDate>Mon, 21 Jan 2019 11:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2019_01_21/</guid>
+      <description>&lt;p&gt;I will be attending &lt;a href=&#34;https://www.side-iea.it/events/iceee/iceee-2019&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ICEEE 2019&lt;/a&gt; conference in Lecce, Italy where I will present my paper &lt;a href=&#34;http://localhost:1313/publication/2018_eru/&#34;&gt;Exchange rate uncertainty and import prices in the euro area&lt;/a&gt; on &lt;strong&gt;Friday, the 25-th&lt;/strong&gt;. My talk will take place in &lt;strong&gt;Room 3&lt;/strong&gt; of Building 6 (Campus Studium 2000) in the session from &lt;strong&gt;14:30 to 16:10&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;I have created a calendar &lt;code&gt;.ics&lt;/code&gt; file which mimics page 3 from the &lt;a href=&#34;https://www.side-iea.it/sites/side-iea.it/files/iceee2019lecce_final_program.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;program&lt;/a&gt;. You may import it in your calendar app and add the Rooms to the sessions that you want to attend. The events have &lt;em&gt;no&lt;/em&gt; notifications by default.&lt;/p&gt;
+&lt;p&gt;Download the .ics &lt;a href=&#34;ICEEE2019.ics&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;After you have successfully imported it should look like this:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-program-overview-for-iceee-2019&#34;&gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Program overview for ICEEE 2019&#34; srcset=&#34;
+               /post/2019_01_21/Calendar_img_hu7941219577369447775.webp 400w,
+               /post/2019_01_21/Calendar_img_hu12124119555196175357.webp 760w,
+               /post/2019_01_21/Calendar_img_hu16538885527389603479.webp 1200w&#34;
+               src=&#34;http://localhost:1313/post/2019_01_21/Calendar_img_hu7941219577369447775.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;468&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Program overview for ICEEE 2019
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

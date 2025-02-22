@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nowcasting via Media Data | Hugo Academic CV Theme</title>
+    <link>http://localhost:1313/tags/nowcasting-via-media-data/</link>
+      <atom:link href="http://localhost:1313/tags/nowcasting-via-media-data/index.xml" rel="self" type="application/rss+xml" />
+    <description>Nowcasting via Media Data</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 13 Dec 2021 11:00:00 +0100</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu12593946659221199760.png</url>
+      <title>Nowcasting via Media Data</title>
+      <link>http://localhost:1313/tags/nowcasting-via-media-data/</link>
+    </image>
+    
+    <item>
+      <title>The investment narrative: Improving private investment forecasts with media data</title>
+      <link>http://localhost:1313/publication/2021_rep_narratives/</link>
+      <pubDate>Mon, 13 Dec 2021 11:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/publication/2021_rep_narratives/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dynamic Factor Model | Hugo Academic CV Theme</title>
+    <link>http://localhost:1313/tags/dynamic-factor-model/</link>
+      <atom:link href="http://localhost:1313/tags/dynamic-factor-model/index.xml" rel="self" type="application/rss+xml" />
+    <description>Dynamic Factor Model</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 13 May 2022 11:00:00 +0100</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu12593946659221199760.png</url>
+      <title>Dynamic Factor Model</title>
+      <link>http://localhost:1313/tags/dynamic-factor-model/</link>
+    </image>
+    
+    <item>
+      <title>Financial integration or financial fragmentation? A euro area perspective</title>
+      <link>http://localhost:1313/publication/2022_em/</link>
+      <pubDate>Fri, 13 May 2022 11:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/publication/2022_em/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Forecasting | Hugo Academic CV Theme</title>
+    <link>http://localhost:1313/tags/forecasting/</link>
+      <atom:link href="http://localhost:1313/tags/forecasting/index.xml" rel="self" type="application/rss+xml" />
+    <description>Forecasting</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jun 2022 11:00:00 +0100</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu12593946659221199760.png</url>
+      <title>Forecasting</title>
+      <link>http://localhost:1313/tags/forecasting/</link>
+    </image>
+    
+    <item>
+      <title>Improving inference and forecasting in VAR models using cross-sectional information</title>
+      <link>http://localhost:1313/publication/2022_rep_pvar/</link>
+      <pubDate>Wed, 01 Jun 2022 11:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/publication/2022_rep_pvar/</guid>
+      <description>&lt;p&gt;The code for the model will be available on the webpage of my co-author Dr. Jan Prüser - &lt;a href=&#34;https://sites.google.com/view/janprueser/computer-code&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://sites.google.com/view/janprueser/computer-code&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

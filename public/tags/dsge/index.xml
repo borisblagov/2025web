@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DSGE | Hugo Academic CV Theme</title>
+    <link>http://localhost:1313/tags/dsge/</link>
+      <atom:link href="http://localhost:1313/tags/dsge/index.xml" rel="self" type="application/rss+xml" />
+    <description>DSGE</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 16 Aug 2019 11:00:00 +0100</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu12593946659221199760.png</url>
+      <title>DSGE</title>
+      <link>http://localhost:1313/tags/dsge/</link>
+    </image>
+    
+    <item>
+      <title>The regime-dependent evolution of credibility: a fresh look at Hong Kong&#39;s linked exchange rate system</title>
+      <link>http://localhost:1313/publication/2019_md/</link>
+      <pubDate>Fri, 16 Aug 2019 11:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/publication/2019_md/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Financial crises and time-varying risk premia in a small open economy: a Markov-switching DSGE model for Estonia</title>
+      <link>http://localhost:1313/publication/2018_ee/</link>
+      <pubDate>Wed, 02 May 2018 11:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/publication/2018_ee/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

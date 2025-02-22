@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Conferences | Hugo Academic CV Theme</title>
+    <link>http://localhost:1313/tags/conferences/</link>
+      <atom:link href="http://localhost:1313/tags/conferences/index.xml" rel="self" type="application/rss+xml" />
+    <description>Conferences</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 21 Jan 2019 11:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu12593946659221199760.png</url>
+      <title>Conferences</title>
+      <link>http://localhost:1313/tags/conferences/</link>
+    </image>
+    
+    <item>
+      <title>Presenting at the Eighth Italian  Congress of Econometrics and Empirical Economics</title>
+      <link>http://localhost:1313/post/2019_01_21/</link>
+      <pubDate>Mon, 21 Jan 2019 11:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2019_01_21/</guid>
+      <description>&lt;p&gt;I will be attending &lt;a href=&#34;https://www.side-iea.it/events/iceee/iceee-2019&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ICEEE 2019&lt;/a&gt; conference in Lecce, Italy where I will present my paper &lt;a href=&#34;http://localhost:1313/publication/2018_eru/&#34;&gt;Exchange rate uncertainty and import prices in the euro area&lt;/a&gt; on &lt;strong&gt;Friday, the 25-th&lt;/strong&gt;. My talk will take place in &lt;strong&gt;Room 3&lt;/strong&gt; of Building 6 (Campus Studium 2000) in the session from &lt;strong&gt;14:30 to 16:10&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;I have created a calendar &lt;code&gt;.ics&lt;/code&gt; file which mimics page 3 from the &lt;a href=&#34;https://www.side-iea.it/sites/side-iea.it/files/iceee2019lecce_final_program.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;program&lt;/a&gt;. You may import it in your calendar app and add the Rooms to the sessions that you want to attend. The events have &lt;em&gt;no&lt;/em&gt; notifications by default.&lt;/p&gt;
+&lt;p&gt;Download the .ics &lt;a href=&#34;ICEEE2019.ics&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;After you have successfully imported it should look like this:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-program-overview-for-iceee-2019&#34;&gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Program overview for ICEEE 2019&#34; srcset=&#34;
+               /post/2019_01_21/Calendar_img_hu7941219577369447775.webp 400w,
+               /post/2019_01_21/Calendar_img_hu12124119555196175357.webp 760w,
+               /post/2019_01_21/Calendar_img_hu16538885527389603479.webp 1200w&#34;
+               src=&#34;http://localhost:1313/post/2019_01_21/Calendar_img_hu7941219577369447775.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;468&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Program overview for ICEEE 2019
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
