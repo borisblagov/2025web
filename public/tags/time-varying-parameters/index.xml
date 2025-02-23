@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Time-Varying Parameters | Hugo Academic CV Theme</title>
+    <title>Time-Varying Parameters | Boris Blagov&#39;s personal website</title>
     <link>http://localhost:1313/tags/time-varying-parameters/</link>
       <atom:link href="http://localhost:1313/tags/time-varying-parameters/index.xml" rel="self" type="application/rss+xml" />
     <description>Time-Varying Parameters</description>

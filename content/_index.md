@@ -1,7 +1,7 @@
 ---
 # Leave the homepage title empty to use the site title
 title: ""
-date: 2022-10-24
+date: 2024-10-24
 type: landing
 
 
@@ -49,30 +49,6 @@ sections:
 #      columns: '1'
 
   - block: collection
-    id: research
-    content:
-      title: Research
-      text: ""
-      filters:
-        folders:
-          - publication
-        exclude_featured: false
-    design:
-      view: article-grid
-
-      
-  - block: collection
-    id: forecast
-    content:
-      title: Latest Forecasts
-      filters:
-        folders:
-          - forecast
-        featured_only: false
-    design:
-      view: article-grid
-      columns: 1
-  - block: collection
     id: blog
     content:
       title: Blog
@@ -101,5 +77,31 @@ sections:
       # Reduce spacing
       spacing:
         padding: [0, 0, 0, 0]
+
+  - block: collection
+    id: research
+    content:
+      title: Research
+      text: ""
+      filters:
+        folders:
+          - publication
+        exclude_featured: false
+    design:
+      view: article-grid
+
+      
+  - block: collection
+    id: forecast
+    content:
+      title: Latest Forecasts
+      filters:
+        folders:
+          - forecast
+        featured_only: false
+    design:
+      view: article-grid
+      columns: 1
+
 
 ---

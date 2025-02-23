@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Forecasts | Hugo Academic CV Theme</title>
+    <title>Forecasts | Boris Blagov&#39;s personal website</title>
     <link>http://localhost:1313/forecast/</link>
       <atom:link href="http://localhost:1313/forecast/index.xml" rel="self" type="application/rss+xml" />
     <description>Forecasts</description>
@@ -50,7 +50,7 @@ The disinflation process has not progressed any further recently. Prices are ris
 
 
 
-&lt;div id=&#34;chart-457823691&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-168453729&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -68,7 +68,7 @@ The disinflation process has not progressed any further recently. Prices are ris
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-457823691&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-168453729&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();

@@ -1,7 +1,7 @@
 ---
 design:
-  css_style: ''
-  css_class: 'custom'
-title: Blog
+  css_style: 'custom'
+  css_class: ''
+title: News
 view: article-grid
 ---
