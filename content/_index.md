@@ -100,7 +100,7 @@ sections:
       filters:
         folders:
           - forecast
-        featured_only: false
+        featured_only: true
     design:
       view: article-grid
       columns: 1
