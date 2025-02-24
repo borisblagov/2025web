@@ -35,6 +35,8 @@ sections:
           size: cover
           position: center
           parallax: false
+    # Customize the section spacing. Order is top, right, bottom, left.
+    padding: ['40px', '0', '0', '0']
 #  - block: markdown
 #    content:
 #      title: '📚 My Research'
