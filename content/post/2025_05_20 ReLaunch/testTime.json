@@ -1,0 +1,246 @@
+{
+    "data": [
+        {
+            "line": {
+                "dash": "solid",
+                "color": "rgb(0,114,189)",
+                "width": 2
+            },
+            "mode": "lines",
+            "name": "",
+            "type": "scatter",
+            "x": [
+                "2010-01-01",
+                "2010-02-01",
+                "2010-03-01",
+                "2010-04-01",
+                "2010-05-01",
+                "2010-06-01",
+                "2010-07-01",
+                "2010-08-01",
+                "2010-09-01",
+                "2010-10-01",
+                "2010-11-01",
+                "2010-12-01",
+                "2011-01-01",
+                "2011-02-01",
+                "2011-03-01",
+                "2011-04-01",
+                "2011-05-01",
+                "2011-06-01",
+                "2011-07-01",
+                "2011-08-01",
+                "2011-09-01",
+                "2011-10-01",
+                "2011-11-01",
+                "2011-12-01"
+            ],
+            "y": [
+                0.585264091152724,
+                0.54972360829114,
+                0.91719366382981,
+                0.285839018820374,
+                0.757200229110721,
+                0.753729094278495,
+                0.380445846975357,
+                0.567821640725221,
+                0.0758542895630636,
+                0.0539501186666071,
+                0.530797553008973,
+                0.779167230102011,
+                0.934010684229183,
+                0.12990620847373,
+                0.568823660872193,
+                0.469390641058206,
+                0.0119020695012414,
+                0.337122644398882,
+                0.162182308193243,
+                0.794284540683907,
+                0.311215042044805,
+                0.528533135506213,
+                0.165648729499781,
+                0.601981941401637
+            ],
+            "xaxis": "x1",
+            "yaxis": "y1",
+            "marker": {
+                "line": {
+                    "width": 2
+                },
+                "size": 3.6,
+                "color": "rgb(0,114,189)"
+            },
+            "visible": true,
+            "showlegend": false
+        }
+    ],
+    "layout": {
+        "width": 1051.2,
+        "height": 703.2,
+        "margin": {
+            "b": 0,
+            "l": 0,
+            "r": 0,
+            "t": 0,
+            "pad": 0
+        },
+        "scene1": {
+            "domain": {
+                "x": [
+                    0.13,
+                    0.905
+                ],
+                "y": [
+                    0.11,
+                    0.925
+                ]
+            }
+        },
+        "xaxis1": {
+            "side": "bottom",
+            "type": "date",
+            "range": [
+                "2010-01-01",
+                "2012-01-01"
+            ],
+            "ticks": "inside",
+            "anchor": "y1",
+            "domain": [
+                0.13,
+                0.905
+            ],
+            "mirror": "ticks",
+            "ticklen": 8.1468,
+            "autotick": true,
+            "showgrid": true,
+            "showline": true,
+            "tickfont": {
+                "size": 10,
+                "color": "rgb(38,38,38)",
+                "family": "Arial, sans-serif"
+            },
+            "tickmode": "array",
+            "tickvals": [
+                "2010-01-01",
+                "2010-04-01",
+                "2010-07-01",
+                "2010-10-01",
+                "2011-01-01",
+                "2011-04-01",
+                "2011-07-01",
+                "2011-10-01",
+                "2012-01-01"
+            ],
+            "zeroline": true,
+            "autorange": false,
+            "gridcolor": "rgba(38,38,38,0.150000)",
+            "gridwidth": 1,
+            "linecolor": "rgb(38,38,38)",
+            "linewidth": 1,
+            "tickangle": 0,
+            "tickcolor": "rgb(38,38,38)",
+            "tickwidth": 1,
+            "titlefont": {
+                "size": 11,
+                "color": "rgb(38,38,38)",
+                "family": "Arial, sans-serif"
+            },
+            "exponentformat": "none",
+            "showticklabels": true
+        },
+        "yaxis1": {
+            "side": "left",
+            "type": "linear",
+            "range": [
+                0,
+                1
+            ],
+            "ticks": "inside",
+            "title": "text",
+            "anchor": "x1",
+            "domain": [
+                0.11,
+                0.925
+            ],
+            "mirror": "ticks",
+            "ticklen": 8.1468,
+            "showgrid": true,
+            "showline": true,
+            "tickfont": {
+                "size": 10,
+                "color": "rgb(38,38,38)",
+                "family": "Arial, sans-serif"
+            },
+            "tickmode": "array",
+            "ticktext": [
+                "0",
+                "0.1",
+                "0.2",
+                "0.3",
+                "0.4",
+                "0.5",
+                "0.6",
+                "0.7",
+                "0.8",
+                "0.9",
+                "1"
+            ],
+            "tickvals": [
+                0,
+                0.1,
+                0.2,
+                0.3,
+                0.4,
+                0.5,
+                0.6,
+                0.7,
+                0.8,
+                0.9,
+                1
+            ],
+            "zeroline": false,
+            "autorange": false,
+            "gridcolor": "rgba(38,38,38,0.150000)",
+            "gridwidth": 1,
+            "linecolor": "rgb(38,38,38)",
+            "linewidth": 1,
+            "tickangle": 0,
+            "tickcolor": "rgb(38,38,38)",
+            "tickwidth": 1,
+            "titlefont": {
+                "size": 11,
+                "color": "rgb(38,38,38)",
+                "family": "Arial, sans-serif"
+            },
+            "exponentformat": "none",
+            "showticklabels": true
+        },
+        "autosize": false,
+        "hovermode": "closest",
+        "showlegend": false,
+        "annotations": [
+            {
+                "x": 0.5175,
+                "y": 0.935,
+                "font": {
+                    "size": 11,
+                    "color": "rgb(0,0,0)",
+                    "family": "Arial, sans-serif"
+                },
+                "text": "<b><b>Title</b></b>",
+                "xref": "paper",
+                "yref": "paper",
+                "align": "center",
+                "xanchor": "center",
+                "yanchor": "bottom",
+                "borderpad": 3,
+                "showarrow": false,
+                "textangle": 0,
+                "bordercolor": "rgba(0,0,0,0)",
+                "borderwidth": 0.5
+            }
+        ],
+        "paper_bgcolor": "rgb(255,255,255)"
+    },
+    "frames": []
+}

@@ -5,12 +5,23 @@
     <link>http://localhost:1313/post/</link>
       <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     <description>News</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 27 Oct 3023 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 20 May 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>http://localhost:1313/media/icon_hu12593946659221199760.png</url>
       <title>News</title>
       <link>http://localhost:1313/post/</link>
     </image>
+    
+    <item>
+      <title>Relaunching the webpage</title>
+      <link>http://localhost:1313/post/2025_05_20-relaunch/</link>
+      <pubDate>Tue, 20 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2025_05_20-relaunch/</guid>
+      <description>&lt;p&gt;Hi! I have been working on &amp;ldquo;relaunching&amp;rdquo; my webpage. If we want to go the European Commission route we can call it &lt;em&gt;ReLaunch&lt;/em&gt; :D.&lt;/p&gt;
+&lt;p&gt;I will soon update my papers and start adding more regularly forecasts and the occasional blog post.&lt;/p&gt;
+&lt;p&gt;You might still find areas that are under construction.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>📈 Communicate your results effectively with the best data visualizations</title>
@@ -27,7 +38,7 @@
 
 
 
-&lt;div id=&#34;chart-539128647&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-215473698&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -45,7 +56,7 @@
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-539128647&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-215473698&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
