@@ -75,7 +75,7 @@ sections:
       order: desc
     design:
       # Choose a layout view
-      view: date-title-summary
+      view: Masonry #article-grid #date-title-summary
       # Reduce spacing
       spacing:
         padding: [0, 0, 0, 0]
@@ -90,7 +90,7 @@ sections:
           - publication
         exclude_featured: false
     design:
-      view: article-grid
+      view: citation
 
       
   - block: collection
@@ -102,7 +102,7 @@ sections:
           - forecast
         featured_only: true
     design:
-      view: article-grid
+      view: card
       columns: 1
 
 
