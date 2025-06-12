@@ -5,12 +5,28 @@
     <link>http://localhost:1313/tags/forecasts/</link>
       <atom:link href="http://localhost:1313/tags/forecasts/index.xml" rel="self" type="application/rss+xml" />
     <description>Forecasts</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 13 Mar 2025 10:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 12 Jun 2025 10:00:00 +0000</lastBuildDate>
     <image>
       <url>http://localhost:1313/media/icon_hu12593946659221199760.png</url>
       <title>Forecasts</title>
       <link>http://localhost:1313/tags/forecasts/</link>
     </image>
+    
+    <item>
+      <title>Early summer 2025: Global economy under the spell of trade policy</title>
+      <link>http://localhost:1313/forecast/forecast_kb_25_2/</link>
+      <pubDate>Thu, 12 Jun 2025 10:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/forecast/forecast_kb_25_2/</guid>
+      <description>&lt;p&gt;The extent to which the German economy&amp;rsquo;s current problems are structural is demonstrated by the persistence of its weak growth: economic output continued to decline at the end of the year. German exports in particular have fallen sharply, especially deliveries to China. German ex-porters are now losing ground to China for the fourth year in a row. Weak foreign demand is contributing to a further decline in investment in equipment. However, there is also a lack of impetus from the domestic market: Low capacity utilization in many sectors of the economy and the alarmingly high level of uncertainty about the economic environment in Germany are causing companies to postpone investments. Only private consumption increased slightly at the end of the year.&lt;/p&gt;
+&lt;p&gt;Uncertainty is likely to have increased further in the first few months of this year. Firstly, the fact that the federal elections have been brought forward to February 2025 has led to decisions being postponed until then. In addition, the rhetoric and decisions of the US administration, which has been in office since January, have drastically increased international uncertainty and, as a result, the real geopolitical risks have risen considerably. The geopolitical risks have also increased, above all because the US-administration has become less willing to defend Europe.&lt;/p&gt;
+&lt;p&gt;Despite all this, the structural problems of the German economy remain. For example, im-portant decisions on energy and climate policy, which would be suitable for ensuring an effi-cient energy transition, have yet to be taken. It is also not yet clear whether the future governing parties will be able to agree on tangible steps in the areas of digitalization and bureaucracy re-duction. However, the already confirmed plans of the future coalition partners to reform the debt brake so that - apart from a base of one percent of economic output - investments in de-fense are not taken into account when calculating the relevant debt, as well as the creation of a new special fund for infrastructure renewal are likely to have a noticeable effect on overall eco-nomic demand. As a 2/3 majority in the German parliament is required to amend the debt brake, implementation is still uncertain. In addition, the implementation of the measures is likely to take some time, meaning that demand effects are not expected until next year.&lt;/p&gt;
+&lt;p&gt;For this reason, although we are assuming a further increase in defense and investment spending in this forecast, we are assuming a significantly lower total volume than the EUR 900 billion currently discussed. In addition, many measures in other policy areas are now likely to be tackled later. Important framework conditions in energy and climate policy, for example, are likely to be delayed as a result.&lt;/p&gt;
+&lt;p&gt;Against this backdrop, we expect a stagnation of economic activity in the first half of the year and a slightly positive growth rates afterwards. The average for the year is a decline of 0.1%. The recovery is likely to strengthen somewhat in the coming year. It is assumed that the overall eco-nomic uncertainty will gradually decrease. However, this requires the new federal government to present a concept for strengthening economic growth that also includes the economic framework conditions. Another prerequisite is that the tariff conflict with the USA can be re-solved in the course of this year. In this case, private consumption is likely to increase more strongly and the savings rate should fall slightly. With interest rates continuing to fall, invest-ments are also likely to gradually increase again. GDP is likely to increase by an annual average of 1.2% in 2026.
+The labor market indicators suggest that unemployment will increase slightly. With the eco-nomic recovery expected in the second half of 2025, unemployment is likely to fall moderately by the end of the forecast period. The unemployment rate is expected to rise to 6.2% this year and fall to 6.1% next year. Overall, the number of people in employment will also continue to fall slightly in the forecast period - by around 45,000 people this year and by a further 15,000 people next year.&lt;/p&gt;
+&lt;p&gt;The inflation rate has risen continuously since its low of 1.6% in September last year, reach-ing 2.6% in December. There have been signs of a trend reversal since the beginning of this year. The decline is particularly evident when looking at the core rate of inflation (overall index excluding energy and food). This is expected to fall from 3.3% in December to 2.6% in Febru-ary. Overall, inflation is expected to be 2% both in the current year and in 2026.&lt;/p&gt;
+&lt;p&gt;According to the policy measures, fiscal policy in the current year is restrictive. Although there are some expansionary stimuli such as changes to income tax and the Tax Reform Act, the end of measures such as the tax-free inflation compensation premium will have a noticeably restric-tive effect in addition to the increased revenue from higher social security contribution rates. In 2026, the fiscal policy measures are likely to be roughly neutral. However, the upcoming change of government could significantly change the direction of fiscal policy in the coming year.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Economic Forecast Spring 2025: Export crisis and political uncertainty weigh on German economy</title>
@@ -66,7 +82,7 @@ The disinflation process has not progressed any further recently. Prices are ris
 
 
 
-&lt;div id=&#34;chart-781453269&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-768231945&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -84,7 +100,7 @@ The disinflation process has not progressed any further recently. Prices are ris
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-781453269&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-768231945&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();

@@ -35,7 +35,7 @@ summary:
 
 tags:
 - Forecasts
-featured: true
+featured: false
 
 # links:
 # - name: ""

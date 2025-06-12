@@ -33,7 +33,7 @@ summary: GDP is expected to expand by 1.9% this year and for the coming year we 
 
 tags:
 - Forecasts
-featured: true
+featured: false
 
 # links:
 # - name: ""

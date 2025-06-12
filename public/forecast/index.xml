@@ -5,12 +5,25 @@
     <link>http://localhost:1313/forecast/</link>
       <atom:link href="http://localhost:1313/forecast/index.xml" rel="self" type="application/rss+xml" />
     <description>Forecasts</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 13 Mar 2025 10:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 12 Jun 2025 10:00:00 +0000</lastBuildDate>
     <image>
       <url>http://localhost:1313/media/icon_hu12593946659221199760.png</url>
       <title>Forecasts</title>
       <link>http://localhost:1313/forecast/</link>
     </image>
+    
+    <item>
+      <title>Early summer 2025: Global economy under the spell of trade policy</title>
+      <link>http://localhost:1313/forecast/forecast_kb_25_2/</link>
+      <pubDate>Thu, 12 Jun 2025 10:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/forecast/forecast_kb_25_2/</guid>
+      <description>&lt;p&gt;The global economy is currently under the influence of trade conflicts. Tariffs are burdening trade and industrial production, and the sword of Damocles of high economic uncertainty hangs over the future economic development. The effective US import tariff rate is currently higher than at any time since World War II. With the currently suspended country-specific &amp;ldquo;re-ciprocal&amp;rdquo; tariffs, it would even be higher than at any time since the Great Depression of the 1930s. At the same time, the unpredictability of US trade policy has catapulted economic un-certainty to unprecedented heights.&lt;/p&gt;
+&lt;p&gt;In the first quarter of 2025, the global economy grew moderately, although the effects of the trade conflicts were already being felt. In the run-up to the announced US import tariff increas-es, exports of the euro area and of China increased, and US imports increased, in some cases significantly.
+Commodity prices have fallen substantially over the recent months. With the decline in energy prices, the disinflation process has continued. However, core inflation excluding energy and food prices remains high. In many countries, service prices remain the main drivers of inflation. The central banks of major economies have responded to the varying inflation trends. For ex-ample, the ECB has already lowered its deposit rate four times this year, while the US Federal Reserve has left its key interest rate unchanged since December 2024, likely due to uncertainty regarding the inflationary effects of US import tariffs.&lt;/p&gt;
+&lt;p&gt;The global economy is expected to expand moderately over the forecast period. Growth of 2.5% is expected for the current year and 2.3% for the next. This should be driven by the de-cline in inflation and robust labour markets, strengthening private consumption. Investment is expected to be stimulated by lower real interest rates.&lt;/p&gt;
+&lt;p&gt;Trade policy poses a significant downside risk to the forecast. Fiscal risks are also increasing. Government debt is already high in many countries, and spending pressure is increasing in areas such as defence, investments in the green transition, and the costs associated with an aging population. Geopolitical risks also remain high. The economy would perform better than expected, not least if there is a rapid resolution to the tariff dispute, thus reducing economic and political uncertainty.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Economic Forecast Spring 2025: Export crisis and political uncertainty weigh on German economy</title>
@@ -66,7 +79,7 @@ The disinflation process has not progressed any further recently. Prices are ris
 
 
 
-&lt;div id=&#34;chart-781453269&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-465978213&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -84,7 +97,7 @@ The disinflation process has not progressed any further recently. Prices are ris
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-781453269&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-465978213&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();

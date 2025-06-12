@@ -30,7 +30,7 @@ summary: The forecast is a thorough analysis of the economic developments in Ger
 
 tags:
 - Forecasts
-featured: true
+featured: false
 
 # links:
 # - name: ""

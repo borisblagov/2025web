@@ -75,7 +75,7 @@ sections:
       order: desc
     design:
       # Choose a layout view
-      view: Masonry #article-grid #date-title-summary
+      view: article-grid #article-grid #date-title-summary
       # Reduce spacing
       spacing:
         padding: [0, 0, 0, 0]
@@ -96,13 +96,13 @@ sections:
   - block: collection
     id: forecast
     content:
-      title: Latest Forecasts
+      title: Latest Forecast
       filters:
         folders:
           - forecast
         featured_only: true
     design:
-      view: card
+      view: article-grid
       columns: 1
 
 
