@@ -2,21 +2,556 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>News | Boris Blagov&#39;s personal website</title>
-    <link>http://localhost:1313/post/</link>
-      <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://borisblagov.com/post/</link>
+      <atom:link href="https://borisblagov.com/post/index.xml" rel="self" type="application/rss+xml" />
     <description>News</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 27 Oct 3023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/media/icon_hu12593946659221199760.png</url>
+      <url>https://borisblagov.com/media/icon_hu12593946659221199760.png</url>
       <title>News</title>
-      <link>http://localhost:1313/post/</link>
+      <link>https://borisblagov.com/post/</link>
     </image>
     
     <item>
+      <title>Monthly estimates for Bulgarian GDP for nowcasting</title>
+      <link>https://borisblagov.com/post/2025_07_03-bg-mf-var/</link>
+      <pubDate>Thu, 03 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://borisblagov.com/post/2025_07_03-bg-mf-var/</guid>
+      <description>&lt;p&gt;Since joining the RWI in 2016 I have been responsible for forecasting and nowcasting the euro area countries. To this aim I have set up a variety of state-of-the-art methods that we have been using both internally and externally. For example, I oversee our Mixed-frequency VAR model for German GDP (quarterly data disaggregated into monthly), as well as our model for the state of Northrheine-Westfalia (yearly data disaggregated into quarterly), both of which, we publish regularly in our forecasts.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve always wanted to implement those models for Bulgaria, and with joining the Euro in 2026, I think that there is no better time to do so.&lt;/p&gt;
+&lt;p&gt;I have recently implemented the mixed-frequency method of &lt;a href=&#34;https://www.sciencedirect.com/science/article/pii/S0304407623001628?via%3Dihub&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Joshua Chan, Aubrey Poon, and Dan Zhu (2023), High-dimensional conditionally Gaussian state space models with missing data&lt;/a&gt; in Julia and Matlab with a hierarchical Minnesota based prior with and without stochastic volatility.&lt;/p&gt;
+&lt;p&gt;I am presenting here the homoskedastic version, estiamted with growth rates:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-monthly-estimates-for-bulgarian-gdp-in-growth-rates&#34;&gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Monthly estimates for Bulgarian GDP in growth rates&#34;
+           src=&#34;https://borisblagov.com/post/2025_07_03-bg-mf-var/BGMFVAR_250703.svg&#34;
+           loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Monthly estimates for Bulgarian GDP in growth rates
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;data&#34;&gt;Data&lt;/h2&gt;
+&lt;p&gt;The data in the model is in quarterly growth rates and starts in 2005.&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;strong&gt;Variable&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Abbreviation&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Transformation&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Source&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;HICP headline&lt;/td&gt;
+          &lt;td&gt;hicpBG&lt;/td&gt;
+          &lt;td&gt;SA, in growth rates&lt;/td&gt;
+          &lt;td&gt;Eurostat&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Employment (total)&lt;/td&gt;
+          &lt;td&gt;empBG&lt;/td&gt;
+          &lt;td&gt;SA, in growth rates&lt;/td&gt;
+          &lt;td&gt;Eurostat&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;ESI Industry&lt;/td&gt;
+          &lt;td&gt;survIndustryBG&lt;/td&gt;
+          &lt;td&gt;div(100)&lt;/td&gt;
+          &lt;td&gt;NSI&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;ESI Retail&lt;/td&gt;
+          &lt;td&gt;survRetailBG&lt;/td&gt;
+          &lt;td&gt;div(100)&lt;/td&gt;
+          &lt;td&gt;NSI&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;ESI Services&lt;/td&gt;
+          &lt;td&gt;survServiceBG&lt;/td&gt;
+          &lt;td&gt;div(100)&lt;/td&gt;
+          &lt;td&gt;NSI&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Producer price index&lt;/td&gt;
+          &lt;td&gt;ppiBG&lt;/td&gt;
+          &lt;td&gt;SA, in growth rates&lt;/td&gt;
+          &lt;td&gt;Eurostat&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Real domestic retail trade&lt;/td&gt;
+          &lt;td&gt;retailBG&lt;/td&gt;
+          &lt;td&gt;SA, in growth rates&lt;/td&gt;
+          &lt;td&gt;Eurostat&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Imports&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;SA, in growth rates&lt;/td&gt;
+          &lt;td&gt;Eurostat&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Exports&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;SA, in growth rates&lt;/td&gt;
+          &lt;td&gt;Eurostat&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Industrial production&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;SA, in growth rates&lt;/td&gt;
+          &lt;td&gt;Eurostat&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Production in construction&lt;/td&gt;
+          &lt;td&gt;constBG&lt;/td&gt;
+          &lt;td&gt;SA, in growth rates&lt;/td&gt;
+          &lt;td&gt;Eurostat&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Tourist arrivals&lt;/td&gt;
+          &lt;td&gt;arrivalsBG&lt;/td&gt;
+          &lt;td&gt;SA, in growth rates&lt;/td&gt;
+          &lt;td&gt;Eurostat&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;SOFIX&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;SA, in growth rates&lt;/td&gt;
+          &lt;td&gt;Eurostat&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;GDP&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;SA, in growth rates&lt;/td&gt;
+          &lt;td&gt;Eurostat&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;The currently available high frequency indicators for Q2 in the beginning of July are mostly surveys, financial data and prices. From the hard indicators we have industrial prodcution, construction, and retail for April, as well as tourist data for April and May.&lt;/p&gt;
+&lt;p&gt;Here is how the &amp;ldquo;ragged edge&amp;rdquo; of the data looks like&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;table class=&#34;table-auto w-full&#34;&gt;
+  
+    
+    
+    &lt;thead&gt;
+      &lt;tr&gt;  &lt;th class=&#34;border-b dark:border-slate-600 font-medium p-4 pt-0 pb-3 text-slate-400 dark:text-slate-200 text-left&#34;&gt;﻿date&lt;/th&gt;  &lt;th class=&#34;border-b dark:border-slate-600 font-medium p-4 pt-0 pb-3 text-slate-400 dark:text-slate-200 text-left&#34;&gt;01.03.2025&lt;/th&gt;  &lt;th class=&#34;border-b dark:border-slate-600 font-medium p-4 pt-0 pb-3 text-slate-400 dark:text-slate-200 text-left&#34;&gt;01.04.2025&lt;/th&gt;  &lt;th class=&#34;border-b dark:border-slate-600 font-medium p-4 pt-0 pb-3 text-slate-400 dark:text-slate-200 text-left&#34;&gt;01.05.2025&lt;/th&gt;  &lt;th class=&#34;border-b dark:border-slate-600 font-medium p-4 pt-0 pb-3 text-slate-400 dark:text-slate-200 text-left&#34;&gt;01.06.2025&lt;/th&gt;  &lt;/tr&gt;
+    &lt;/thead&gt;
+  
+  &lt;tbody&gt;
+  
+    &lt;tr&gt;
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;sofixBG&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;901.9&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;number&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;885&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;949.5&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;number&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;1010&lt;/td&gt;
+        
+      
+    &lt;/tr&gt;
+  
+    &lt;tr&gt;
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;hicpBG&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;142.3&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;140.5&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;140.9&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;&lt;/td&gt;
+        
+      
+    &lt;/tr&gt;
+  
+    &lt;tr&gt;
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;empBG&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;2354056.5&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;&lt;/td&gt;
+        
+      
+    &lt;/tr&gt;
+  
+    &lt;tr&gt;
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;survIndustryBG&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;-0.6&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;-1.1&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;1.7&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;number&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;1&lt;/td&gt;
+        
+      
+    &lt;/tr&gt;
+  
+    &lt;tr&gt;
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;survRetailBG&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;13.4&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;12.8&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;17.3&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;number&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;19&lt;/td&gt;
+        
+      
+    &lt;/tr&gt;
+  
+    &lt;tr&gt;
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;survServiceBG&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;11.1&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;9.1&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;11.3&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;14.1&lt;/td&gt;
+        
+      
+    &lt;/tr&gt;
+  
+    &lt;tr&gt;
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;ppiBG&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;169.8&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;163.9&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;160.9&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;&lt;/td&gt;
+        
+      
+    &lt;/tr&gt;
+  
+    &lt;tr&gt;
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;retailBG&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;160.3&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;161.2&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;&lt;/td&gt;
+        
+      
+    &lt;/tr&gt;
+  
+    &lt;tr&gt;
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;importsBG&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;126.8&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;&lt;/td&gt;
+        
+      
+    &lt;/tr&gt;
+  
+    &lt;tr&gt;
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;exportsBG&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;116.8&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;&lt;/td&gt;
+        
+      
+    &lt;/tr&gt;
+  
+    &lt;tr&gt;
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;constBG&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;99.4&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;98.8&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;&lt;/td&gt;
+        
+      
+    &lt;/tr&gt;
+  
+    &lt;tr&gt;
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;ipBG&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;number&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;101&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;101.8&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;&lt;/td&gt;
+        
+      
+    &lt;/tr&gt;
+  
+    &lt;tr&gt;
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;arrivalsBG&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;number&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;1108310&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;1108584.5&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;number&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;1108925&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;&lt;/td&gt;
+        
+      
+    &lt;/tr&gt;
+  
+    &lt;tr&gt;
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;survConsBG&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;105.5&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;102.6&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;103.5&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;number&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;104&lt;/td&gt;
+        
+      
+    &lt;/tr&gt;
+  
+  &lt;/tbody&gt;
+  
+    &lt;caption class=&#34;table-caption&#34;&gt;Ragged edge for the BG MF-VAR model (untransformed)&lt;/caption&gt;
+  
+&lt;/table&gt;
+
+&lt;p&gt;For the second quarter, the nowcast estimate suggests a slowdown of Bulgarian GDP growth to 0.15 after the 0.6% quarter-on-quarter growth rate in Q1 of 2025. The forecast for the remainder of the year are a strong 1.2% growth in Q3 and a moderate 0.6% for Q4.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-caption&#34;&gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Quarterly growth rate estimates&#34; srcset=&#34;
+               /post/2025_07_03-bg-mf-var/QoQ_hu11869975513739202333.webp 400w,
+               /post/2025_07_03-bg-mf-var/QoQ_hu6483608342456531446.webp 760w,
+               /post/2025_07_03-bg-mf-var/QoQ_hu8918796599968368946.webp 1200w&#34;
+               src=&#34;https://borisblagov.com/post/2025_07_03-bg-mf-var/QoQ_hu11869975513739202333.webp&#34;
+               width=&#34;668&#34;
+               height=&#34;399&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      caption
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;I plan to publish regularly these nowcasts, as well as compile a paper with the model and comparison of the out-of-sample forecast performance of the model for various speicifications (with and without stochastic volatilty). If you want, you can download the monthly series (&lt;a href=&#34;BGMFVAR_250703.xlsx&#34;&gt;xlsx&lt;/a&gt;, &lt;a href=&#34;BGMFVAR_250703.csv&#34;&gt;csv&lt;/a&gt;) and if you are interested, feel free to write me an &lt;a href=&#34;mailto:boris.blagov@rwi-essen.de&#34;&gt;email&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Relaunching the webpage</title>
-      <link>http://localhost:1313/post/2025_05_20-relaunch/</link>
+      <link>https://borisblagov.com/post/2025_05_20-relaunch/</link>
       <pubDate>Tue, 20 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2025_05_20-relaunch/</guid>
+      <guid>https://borisblagov.com/post/2025_05_20-relaunch/</guid>
       <description>&lt;p&gt;Hi! I have been working on &amp;ldquo;relaunching&amp;rdquo; my webpage. If we want to go the European Commission route we can call it &lt;em&gt;ReLaunch&lt;/em&gt; :D.&lt;/p&gt;
 &lt;p&gt;I will soon update my papers and start adding more regularly forecasts and the occasional blog post.&lt;/p&gt;
 &lt;p&gt;You might still find areas that are under construction.&lt;/p&gt;
@@ -25,9 +560,9 @@
     
     <item>
       <title>📈 Communicate your results effectively with the best data visualizations</title>
-      <link>http://localhost:1313/post/data-visualization/</link>
+      <link>https://borisblagov.com/post/data-visualization/</link>
       <pubDate>Wed, 25 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/data-visualization/</guid>
+      <guid>https://borisblagov.com/post/data-visualization/</guid>
       <description>&lt;p&gt;Hugo Blox is designed to give technical content creators a seamless experience. You can focus on the content and Hugo Blox handles the rest.&lt;/p&gt;
 &lt;p&gt;Use popular tools such as Plotly, Mermaid, and data frames.&lt;/p&gt;
 &lt;h2 id=&#34;charts&#34;&gt;Charts&lt;/h2&gt;
@@ -38,7 +573,7 @@
 
 
 
-&lt;div id=&#34;chart-497136258&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-937624851&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -56,7 +591,7 @@
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-497136258&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-937624851&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -235,9 +770,9 @@ Crash --&gt; [*]
     
     <item>
       <title>The effects of COVID-19 on the Italian economy</title>
-      <link>http://localhost:1313/post/2020_03_29/</link>
+      <link>https://borisblagov.com/post/2020_03_29/</link>
       <pubDate>Mon, 23 Mar 2020 11:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2020_03_29/</guid>
+      <guid>https://borisblagov.com/post/2020_03_29/</guid>
       <description>&lt;p&gt;&lt;em&gt;Disclaimer: This is a loose translation of the analysis &amp;ldquo;The effects of COVID-19 on the Italian economy&amp;rdquo; which was published in the &lt;a href=&#34;https://www.side-iea.it/sites/side-iea.it/files/iceee2019lecce_final_program.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RWI Spring international forecast&lt;/a&gt;. The analysis was finalized on the 19th of March 2020 and therefore does not include newer developments. This translation is my own and is therefore not affiliated with RWI - Leibniz Institute for economic research in any way. All the errors are my own.&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;Assuming that&lt;/p&gt;
@@ -285,14 +820,14 @@ Data used are from 2000 onwards. Monthly data are available until December 2019 
 &lt;li&gt;Car registrations fall by 50% in March and, like industrial production, remain at this level for another month.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;We plot those assumptions on Figure 1.&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/post/2020_03_29/Counterfactual_monthly.png&#34;&gt;&lt;figcaption&gt;
+&lt;figure&gt;&lt;img src=&#34;https://borisblagov.com/post/2020_03_29/Counterfactual_monthly.png&#34;&gt;&lt;figcaption&gt;
       &lt;h4&gt;Assumptions on the effects of COVID-19 on industrial production, new arrivals, overnight stays and car registrations (red) and conuterfactual scenario (blue).&lt;/h4&gt;
     &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Based on the experience of the quarantine measures taken in China (Wu &amp;amp; McGoogan 2020), we expect the situation to get better from May onwards. In the three months past May there will be a return to the original level of the four variables. In tourism, the level of both variables remains about 5% below the counterfactual scenario in the summer. With the help of an MF-VAR these variables are forecast for the period from October 2020 onwards. In Figure 1, the developments are shown in blue. An overshoot over the values of the counterfactual scenario is to be expected for industrial production and new car registrations.&lt;/p&gt;
 &lt;p&gt;Figure 2 shows the model forecasts for GDP and private consumption. If the virus had not spread, both aggregates would have risen at decreasing rates, but consistently. Under the assumptions made here, the spread of COVID-19 is likely to reduce real GDP and private consumption significantly in the first half of the year. In the second half of the year, expansion rates should then be well above potential rates due to catch-up effects. All in all, the overall economic activity in Italy is expected to decline by 2.4% this year. In contrast, GDP and consumer spending will rise by 0.2% in the alternative scenario, while private consumption is likely to decline by 0.9% in 2020. This results in a &lt;strong&gt;negative GDP effect of COVID-19 of about 2.6% on GDP&lt;/strong&gt; and &lt;strong&gt;1.1% on private consumption.&lt;/strong&gt;&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/post/2020_03_29/Counterfactual_quarterly.png&#34;&gt;&lt;figcaption&gt;
+&lt;figure&gt;&lt;img src=&#34;https://borisblagov.com/post/2020_03_29/Counterfactual_quarterly.png&#34;&gt;&lt;figcaption&gt;
       &lt;h4&gt;The effects of COVID-19 on Gross domestic product (left) and Personal consumption (right) in red versus the counterfactual scernaio in blue.&lt;/h4&gt;
     &lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -303,10 +838,10 @@ Data used are from 2000 onwards. Monthly data are available until December 2019 
     
     <item>
       <title>Presenting at the Eighth Italian  Congress of Econometrics and Empirical Economics</title>
-      <link>http://localhost:1313/post/2019_01_21/</link>
+      <link>https://borisblagov.com/post/2019_01_21/</link>
       <pubDate>Mon, 21 Jan 2019 11:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2019_01_21/</guid>
-      <description>&lt;p&gt;I will be attending &lt;a href=&#34;https://www.side-iea.it/events/iceee/iceee-2019&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ICEEE 2019&lt;/a&gt; conference in Lecce, Italy where I will present my paper &lt;a href=&#34;http://localhost:1313/publication/2018_eru/&#34;&gt;Exchange rate uncertainty and import prices in the euro area&lt;/a&gt; on &lt;strong&gt;Friday, the 25-th&lt;/strong&gt;. My talk will take place in &lt;strong&gt;Room 3&lt;/strong&gt; of Building 6 (Campus Studium 2000) in the session from &lt;strong&gt;14:30 to 16:10&lt;/strong&gt;.&lt;/p&gt;
+      <guid>https://borisblagov.com/post/2019_01_21/</guid>
+      <description>&lt;p&gt;I will be attending &lt;a href=&#34;https://www.side-iea.it/events/iceee/iceee-2019&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ICEEE 2019&lt;/a&gt; conference in Lecce, Italy where I will present my paper &lt;a href=&#34;https://borisblagov.com/publication/2018_eru/&#34;&gt;Exchange rate uncertainty and import prices in the euro area&lt;/a&gt; on &lt;strong&gt;Friday, the 25-th&lt;/strong&gt;. My talk will take place in &lt;strong&gt;Room 3&lt;/strong&gt; of Building 6 (Campus Studium 2000) in the session from &lt;strong&gt;14:30 to 16:10&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;I have created a calendar &lt;code&gt;.ics&lt;/code&gt; file which mimics page 3 from the &lt;a href=&#34;https://www.side-iea.it/sites/side-iea.it/files/iceee2019lecce_final_program.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;program&lt;/a&gt;. You may import it in your calendar app and add the Rooms to the sessions that you want to attend. The events have &lt;em&gt;no&lt;/em&gt; notifications by default.&lt;/p&gt;
 &lt;p&gt;Download the .ics &lt;a href=&#34;ICEEE2019.ics&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;After you have successfully imported it should look like this:&lt;/p&gt;
@@ -332,7 +867,7 @@ Data used are from 2000 onwards. Monthly data are available until December 2019 
                /post/2019_01_21/Calendar_img_hu7941219577369447775.webp 400w,
                /post/2019_01_21/Calendar_img_hu12124119555196175357.webp 760w,
                /post/2019_01_21/Calendar_img_hu16538885527389603479.webp 1200w&#34;
-               src=&#34;http://localhost:1313/post/2019_01_21/Calendar_img_hu7941219577369447775.webp&#34;
+               src=&#34;https://borisblagov.com/post/2019_01_21/Calendar_img_hu7941219577369447775.webp&#34;
                width=&#34;760&#34;
                height=&#34;468&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;

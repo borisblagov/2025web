@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Boris Blagov&#39;s personal website</title>
-    <link>http://localhost:1313/</link>
-      <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://borisblagov.com/</link>
+      <atom:link href="https://borisblagov.com/index.xml" rel="self" type="application/rss+xml" />
     <description>Boris Blagov&#39;s personal website</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 24 Oct 2024 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/media/icon_hu12593946659221199760.png</url>
+      <url>https://borisblagov.com/media/icon_hu12593946659221199760.png</url>
       <title>Boris Blagov&#39;s personal website</title>
-      <link>http://localhost:1313/</link>
+      <link>https://borisblagov.com/</link>
     </image>
     
     <item>
       <title>Example Talk</title>
-      <link>http://localhost:1313/event/example/</link>
+      <link>https://borisblagov.com/event/example/</link>
       <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/event/example/</guid>
+      <guid>https://borisblagov.com/event/example/</guid>
       <description>&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
 &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
   &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
@@ -34,10 +34,545 @@
     </item>
     
     <item>
+      <title>Monthly estimates for Bulgarian GDP for nowcasting</title>
+      <link>https://borisblagov.com/post/2025_07_03-bg-mf-var/</link>
+      <pubDate>Thu, 03 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://borisblagov.com/post/2025_07_03-bg-mf-var/</guid>
+      <description>&lt;p&gt;Since joining the RWI in 2016 I have been responsible for forecasting and nowcasting the euro area countries. To this aim I have set up a variety of state-of-the-art methods that we have been using both internally and externally. For example, I oversee our Mixed-frequency VAR model for German GDP (quarterly data disaggregated into monthly), as well as our model for the state of Northrheine-Westfalia (yearly data disaggregated into quarterly), both of which, we publish regularly in our forecasts.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve always wanted to implement those models for Bulgaria, and with joining the Euro in 2026, I think that there is no better time to do so.&lt;/p&gt;
+&lt;p&gt;I have recently implemented the mixed-frequency method of &lt;a href=&#34;https://www.sciencedirect.com/science/article/pii/S0304407623001628?via%3Dihub&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Joshua Chan, Aubrey Poon, and Dan Zhu (2023), High-dimensional conditionally Gaussian state space models with missing data&lt;/a&gt; in Julia and Matlab with a hierarchical Minnesota based prior with and without stochastic volatility.&lt;/p&gt;
+&lt;p&gt;I am presenting here the homoskedastic version, estiamted with growth rates:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-monthly-estimates-for-bulgarian-gdp-in-growth-rates&#34;&gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Monthly estimates for Bulgarian GDP in growth rates&#34;
+           src=&#34;https://borisblagov.com/post/2025_07_03-bg-mf-var/BGMFVAR_250703.svg&#34;
+           loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Monthly estimates for Bulgarian GDP in growth rates
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;data&#34;&gt;Data&lt;/h2&gt;
+&lt;p&gt;The data in the model is in quarterly growth rates and starts in 2005.&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;strong&gt;Variable&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Abbreviation&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Transformation&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Source&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;HICP headline&lt;/td&gt;
+          &lt;td&gt;hicpBG&lt;/td&gt;
+          &lt;td&gt;SA, in growth rates&lt;/td&gt;
+          &lt;td&gt;Eurostat&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Employment (total)&lt;/td&gt;
+          &lt;td&gt;empBG&lt;/td&gt;
+          &lt;td&gt;SA, in growth rates&lt;/td&gt;
+          &lt;td&gt;Eurostat&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;ESI Industry&lt;/td&gt;
+          &lt;td&gt;survIndustryBG&lt;/td&gt;
+          &lt;td&gt;div(100)&lt;/td&gt;
+          &lt;td&gt;NSI&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;ESI Retail&lt;/td&gt;
+          &lt;td&gt;survRetailBG&lt;/td&gt;
+          &lt;td&gt;div(100)&lt;/td&gt;
+          &lt;td&gt;NSI&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;ESI Services&lt;/td&gt;
+          &lt;td&gt;survServiceBG&lt;/td&gt;
+          &lt;td&gt;div(100)&lt;/td&gt;
+          &lt;td&gt;NSI&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Producer price index&lt;/td&gt;
+          &lt;td&gt;ppiBG&lt;/td&gt;
+          &lt;td&gt;SA, in growth rates&lt;/td&gt;
+          &lt;td&gt;Eurostat&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Real domestic retail trade&lt;/td&gt;
+          &lt;td&gt;retailBG&lt;/td&gt;
+          &lt;td&gt;SA, in growth rates&lt;/td&gt;
+          &lt;td&gt;Eurostat&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Imports&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;SA, in growth rates&lt;/td&gt;
+          &lt;td&gt;Eurostat&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Exports&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;SA, in growth rates&lt;/td&gt;
+          &lt;td&gt;Eurostat&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Industrial production&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;SA, in growth rates&lt;/td&gt;
+          &lt;td&gt;Eurostat&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Production in construction&lt;/td&gt;
+          &lt;td&gt;constBG&lt;/td&gt;
+          &lt;td&gt;SA, in growth rates&lt;/td&gt;
+          &lt;td&gt;Eurostat&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Tourist arrivals&lt;/td&gt;
+          &lt;td&gt;arrivalsBG&lt;/td&gt;
+          &lt;td&gt;SA, in growth rates&lt;/td&gt;
+          &lt;td&gt;Eurostat&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;SOFIX&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;SA, in growth rates&lt;/td&gt;
+          &lt;td&gt;Eurostat&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;GDP&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;SA, in growth rates&lt;/td&gt;
+          &lt;td&gt;Eurostat&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;The currently available high frequency indicators for Q2 in the beginning of July are mostly surveys, financial data and prices. From the hard indicators we have industrial prodcution, construction, and retail for April, as well as tourist data for April and May.&lt;/p&gt;
+&lt;p&gt;Here is how the &amp;ldquo;ragged edge&amp;rdquo; of the data looks like&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;table class=&#34;table-auto w-full&#34;&gt;
+  
+    
+    
+    &lt;thead&gt;
+      &lt;tr&gt;  &lt;th class=&#34;border-b dark:border-slate-600 font-medium p-4 pt-0 pb-3 text-slate-400 dark:text-slate-200 text-left&#34;&gt;﻿date&lt;/th&gt;  &lt;th class=&#34;border-b dark:border-slate-600 font-medium p-4 pt-0 pb-3 text-slate-400 dark:text-slate-200 text-left&#34;&gt;01.03.2025&lt;/th&gt;  &lt;th class=&#34;border-b dark:border-slate-600 font-medium p-4 pt-0 pb-3 text-slate-400 dark:text-slate-200 text-left&#34;&gt;01.04.2025&lt;/th&gt;  &lt;th class=&#34;border-b dark:border-slate-600 font-medium p-4 pt-0 pb-3 text-slate-400 dark:text-slate-200 text-left&#34;&gt;01.05.2025&lt;/th&gt;  &lt;th class=&#34;border-b dark:border-slate-600 font-medium p-4 pt-0 pb-3 text-slate-400 dark:text-slate-200 text-left&#34;&gt;01.06.2025&lt;/th&gt;  &lt;/tr&gt;
+    &lt;/thead&gt;
+  
+  &lt;tbody&gt;
+  
+    &lt;tr&gt;
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;sofixBG&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;901.9&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;number&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;885&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;949.5&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;number&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;1010&lt;/td&gt;
+        
+      
+    &lt;/tr&gt;
+  
+    &lt;tr&gt;
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;hicpBG&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;142.3&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;140.5&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;140.9&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;&lt;/td&gt;
+        
+      
+    &lt;/tr&gt;
+  
+    &lt;tr&gt;
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;empBG&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;2354056.5&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;&lt;/td&gt;
+        
+      
+    &lt;/tr&gt;
+  
+    &lt;tr&gt;
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;survIndustryBG&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;-0.6&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;-1.1&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;1.7&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;number&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;1&lt;/td&gt;
+        
+      
+    &lt;/tr&gt;
+  
+    &lt;tr&gt;
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;survRetailBG&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;13.4&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;12.8&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;17.3&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;number&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;19&lt;/td&gt;
+        
+      
+    &lt;/tr&gt;
+  
+    &lt;tr&gt;
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;survServiceBG&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;11.1&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;9.1&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;11.3&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;14.1&lt;/td&gt;
+        
+      
+    &lt;/tr&gt;
+  
+    &lt;tr&gt;
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;ppiBG&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;169.8&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;163.9&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;160.9&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;&lt;/td&gt;
+        
+      
+    &lt;/tr&gt;
+  
+    &lt;tr&gt;
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;retailBG&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;160.3&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;161.2&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;&lt;/td&gt;
+        
+      
+    &lt;/tr&gt;
+  
+    &lt;tr&gt;
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;importsBG&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;126.8&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;&lt;/td&gt;
+        
+      
+    &lt;/tr&gt;
+  
+    &lt;tr&gt;
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;exportsBG&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;116.8&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;&lt;/td&gt;
+        
+      
+    &lt;/tr&gt;
+  
+    &lt;tr&gt;
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;constBG&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;99.4&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;98.8&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;&lt;/td&gt;
+        
+      
+    &lt;/tr&gt;
+  
+    &lt;tr&gt;
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;ipBG&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;number&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;101&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;101.8&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;&lt;/td&gt;
+        
+      
+    &lt;/tr&gt;
+  
+    &lt;tr&gt;
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;arrivalsBG&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;number&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;1108310&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;1108584.5&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;number&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;1108925&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;&lt;/td&gt;
+        
+      
+    &lt;/tr&gt;
+  
+    &lt;tr&gt;
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;survConsBG&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;105.5&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;102.6&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;103.5&lt;/td&gt;
+        
+      
+        
+          &lt;td data-table-dtype=&#34;number&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;104&lt;/td&gt;
+        
+      
+    &lt;/tr&gt;
+  
+  &lt;/tbody&gt;
+  
+    &lt;caption class=&#34;table-caption&#34;&gt;Ragged edge for the BG MF-VAR model (untransformed)&lt;/caption&gt;
+  
+&lt;/table&gt;
+
+&lt;p&gt;For the second quarter, the nowcast estimate suggests a slowdown of Bulgarian GDP growth to 0.15 after the 0.6% quarter-on-quarter growth rate in Q1 of 2025. The forecast for the remainder of the year are a strong 1.2% growth in Q3 and a moderate 0.6% for Q4.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-caption&#34;&gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Quarterly growth rate estimates&#34; srcset=&#34;
+               /post/2025_07_03-bg-mf-var/QoQ_hu11869975513739202333.webp 400w,
+               /post/2025_07_03-bg-mf-var/QoQ_hu6483608342456531446.webp 760w,
+               /post/2025_07_03-bg-mf-var/QoQ_hu8918796599968368946.webp 1200w&#34;
+               src=&#34;https://borisblagov.com/post/2025_07_03-bg-mf-var/QoQ_hu11869975513739202333.webp&#34;
+               width=&#34;668&#34;
+               height=&#34;399&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      caption
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;I plan to publish regularly these nowcasts, as well as compile a paper with the model and comparison of the out-of-sample forecast performance of the model for various speicifications (with and without stochastic volatilty). If you want, you can download the monthly series (&lt;a href=&#34;BGMFVAR_250703.xlsx&#34;&gt;xlsx&lt;/a&gt;, &lt;a href=&#34;BGMFVAR_250703.csv&#34;&gt;csv&lt;/a&gt;) and if you are interested, feel free to write me an &lt;a href=&#34;mailto:boris.blagov@rwi-essen.de&#34;&gt;email&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Early summer 2025: Global economy under the spell of trade policy</title>
-      <link>http://localhost:1313/forecast/forecast_kb_25_2/</link>
+      <link>https://borisblagov.com/forecast/forecast_kb_25_2/</link>
       <pubDate>Thu, 12 Jun 2025 10:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/forecast/forecast_kb_25_2/</guid>
+      <guid>https://borisblagov.com/forecast/forecast_kb_25_2/</guid>
       <description>&lt;p&gt;The global economy is currently under the influence of trade conflicts. Tariffs are burdening trade and industrial production, and the sword of Damocles of high economic uncertainty hangs over the future economic development. The effective US import tariff rate is currently higher than at any time since World War II. With the currently suspended country-specific &amp;ldquo;re-ciprocal&amp;rdquo; tariffs, it would even be higher than at any time since the Great Depression of the 1930s. At the same time, the unpredictability of US trade policy has catapulted economic un-certainty to unprecedented heights.&lt;/p&gt;
 &lt;p&gt;In the first quarter of 2025, the global economy grew moderately, although the effects of the trade conflicts were already being felt. In the run-up to the announced US import tariff increas-es, exports of the euro area and of China increased, and US imports increased, in some cases significantly.
 Commodity prices have fallen substantially over the recent months. With the decline in energy prices, the disinflation process has continued. However, core inflation excluding energy and food prices remains high. In many countries, service prices remain the main drivers of inflation. The central banks of major economies have responded to the varying inflation trends. For ex-ample, the ECB has already lowered its deposit rate four times this year, while the US Federal Reserve has left its key interest rate unchanged since December 2024, likely due to uncertainty regarding the inflationary effects of US import tariffs.&lt;/p&gt;
@@ -48,9 +583,9 @@ Commodity prices have fallen substantially over the recent months. With the decl
     
     <item>
       <title>Relaunching the webpage</title>
-      <link>http://localhost:1313/post/2025_05_20-relaunch/</link>
+      <link>https://borisblagov.com/post/2025_05_20-relaunch/</link>
       <pubDate>Tue, 20 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2025_05_20-relaunch/</guid>
+      <guid>https://borisblagov.com/post/2025_05_20-relaunch/</guid>
       <description>&lt;p&gt;Hi! I have been working on &amp;ldquo;relaunching&amp;rdquo; my webpage. If we want to go the European Commission route we can call it &lt;em&gt;ReLaunch&lt;/em&gt; :D.&lt;/p&gt;
 &lt;p&gt;I will soon update my papers and start adding more regularly forecasts and the occasional blog post.&lt;/p&gt;
 &lt;p&gt;You might still find areas that are under construction.&lt;/p&gt;
@@ -59,9 +594,9 @@ Commodity prices have fallen substantially over the recent months. With the decl
     
     <item>
       <title>Economic Forecast Spring 2025: Export crisis and political uncertainty weigh on German economy</title>
-      <link>http://localhost:1313/forecast/forecast_kb_25_1/</link>
+      <link>https://borisblagov.com/forecast/forecast_kb_25_1/</link>
       <pubDate>Thu, 13 Mar 2025 10:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/forecast/forecast_kb_25_1/</guid>
+      <guid>https://borisblagov.com/forecast/forecast_kb_25_1/</guid>
       <description>&lt;p&gt;The extent to which the German economy&amp;rsquo;s current problems are structural is demonstrated by the persistence of its weak growth: economic output continued to decline at the end of the year. German exports in particular have fallen sharply, especially deliveries to China. German ex-porters are now losing ground to China for the fourth year in a row. Weak foreign demand is contributing to a further decline in investment in equipment. However, there is also a lack of impetus from the domestic market: Low capacity utilization in many sectors of the economy and the alarmingly high level of uncertainty about the economic environment in Germany are causing companies to postpone investments. Only private consumption increased slightly at the end of the year.&lt;/p&gt;
 &lt;p&gt;Uncertainty is likely to have increased further in the first few months of this year. Firstly, the fact that the federal elections have been brought forward to February 2025 has led to decisions being postponed until then. In addition, the rhetoric and decisions of the US administration, which has been in office since January, have drastically increased international uncertainty and, as a result, the real geopolitical risks have risen considerably. The geopolitical risks have also increased, above all because the US-administration has become less willing to defend Europe.&lt;/p&gt;
 &lt;p&gt;Despite all this, the structural problems of the German economy remain. For example, im-portant decisions on energy and climate policy, which would be suitable for ensuring an effi-cient energy transition, have yet to be taken. It is also not yet clear whether the future governing parties will be able to agree on tangible steps in the areas of digitalization and bureaucracy re-duction. However, the already confirmed plans of the future coalition partners to reform the debt brake so that - apart from a base of one percent of economic output - investments in de-fense are not taken into account when calculating the relevant debt, as well as the creation of a new special fund for infrastructure renewal are likely to have a noticeable effect on overall eco-nomic demand. As a 2/3 majority in the German parliament is required to amend the debt brake, implementation is still uncertain. In addition, the implementation of the measures is likely to take some time, meaning that demand effects are not expected until next year.&lt;/p&gt;
@@ -75,9 +610,9 @@ The labor market indicators suggest that unemployment will increase slightly. Wi
     
     <item>
       <title>International Economics</title>
-      <link>http://localhost:1313/teaching/2025_internationaleconomics/</link>
+      <link>https://borisblagov.com/teaching/2025_internationaleconomics/</link>
       <pubDate>Sat, 25 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/2025_internationaleconomics/</guid>
+      <guid>https://borisblagov.com/teaching/2025_internationaleconomics/</guid>
       <description>
 
 
@@ -1099,9 +1634,9 @@ The labor market indicators suggest that unemployment will increase slightly. Wi
     
     <item>
       <title>International Economics</title>
-      <link>http://localhost:1313/teaching/python/</link>
+      <link>https://borisblagov.com/teaching/python/</link>
       <pubDate>Sat, 25 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/python/</guid>
+      <guid>https://borisblagov.com/teaching/python/</guid>
       <description>&lt;p&gt;In the spring term of 2025 I will be teaching International Economics at the Constructor Unversity Bremen.&lt;/p&gt;
 &lt;p&gt;Here is a detailed schedule:&lt;/p&gt;
 </description>
@@ -1109,9 +1644,9 @@ The labor market indicators suggest that unemployment will increase slightly. Wi
     
     <item>
       <title>World Economic Forecast Winter 2024: Global Economy Grows Moderately Amid High Political Uncertainty</title>
-      <link>http://localhost:1313/forecast/forecast_kb_24_4/</link>
+      <link>https://borisblagov.com/forecast/forecast_kb_24_4/</link>
       <pubDate>Sat, 14 Dec 2024 10:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/forecast/forecast_kb_24_4/</guid>
+      <guid>https://borisblagov.com/forecast/forecast_kb_24_4/</guid>
       <description>&lt;p&gt;The global economy maintained its solid growth trajectory this summer, driven primarily by the strong expansion in the USA. Global industrial production picked up significantly in spring and summer, particularly in Asia. Parallel to industrial production, global trade in goods also expanded noticeably until the summer. However, current data suggests that the upturn in industrial production and in global trade is unlikely to
 persist. Industrial production and global trade fell in September. The global purchasing managers&amp;rsquo; index for the manufacturing sector also suggests that the fundamental weakness in industry is continuing.
 The disinflation process has not progressed any further recently. Prices are rising sharply in the services sector, which is why core inflation excluding energy and food is stubbornly persistent.&lt;/p&gt;
@@ -1121,49 +1656,49 @@ The disinflation process has not progressed any further recently. Prices are ris
     
     <item>
       <title>Economic Knock-On Effects of Russia’s Geopolitical Risk on Advanced Economies: A Global VAR Approach</title>
-      <link>http://localhost:1313/publication/2024_bfd/</link>
+      <link>https://borisblagov.com/publication/2024_bfd/</link>
       <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publication/2024_bfd/</guid>
+      <guid>https://borisblagov.com/publication/2024_bfd/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Projects</title>
-      <link>http://localhost:1313/projects/</link>
+      <link>https://borisblagov.com/projects/</link>
       <pubDate>Sun, 19 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/</guid>
+      <guid>https://borisblagov.com/projects/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Pandas</title>
-      <link>http://localhost:1313/project/pandas/</link>
+      <link>https://borisblagov.com/project/pandas/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/project/pandas/</guid>
+      <guid>https://borisblagov.com/project/pandas/</guid>
       <description>&lt;p&gt;Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>PyTorch</title>
-      <link>http://localhost:1313/project/pytorch/</link>
+      <link>https://borisblagov.com/project/pytorch/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/project/pytorch/</guid>
+      <guid>https://borisblagov.com/project/pytorch/</guid>
       <description>&lt;p&gt;PyTorch is a Python package that provides tensor computation (like NumPy) with strong GPU acceleration.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>scikit-learn</title>
-      <link>http://localhost:1313/project/scikit/</link>
+      <link>https://borisblagov.com/project/scikit/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/project/scikit/</guid>
+      <guid>https://borisblagov.com/project/scikit/</guid>
       <description>&lt;p&gt;scikit-learn is a Python module for machine learning built on top of SciPy and is distributed under the 3-Clause BSD license.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>📈 Communicate your results effectively with the best data visualizations</title>
-      <link>http://localhost:1313/post/data-visualization/</link>
+      <link>https://borisblagov.com/post/data-visualization/</link>
       <pubDate>Wed, 25 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/data-visualization/</guid>
+      <guid>https://borisblagov.com/post/data-visualization/</guid>
       <description>&lt;p&gt;Hugo Blox is designed to give technical content creators a seamless experience. You can focus on the content and Hugo Blox handles the rest.&lt;/p&gt;
 &lt;p&gt;Use popular tools such as Plotly, Mermaid, and data frames.&lt;/p&gt;
 &lt;h2 id=&#34;charts&#34;&gt;Charts&lt;/h2&gt;
@@ -1174,7 +1709,7 @@ The disinflation process has not progressed any further recently. Prices are ris
 
 
 
-&lt;div id=&#34;chart-497136258&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-937624851&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -1192,7 +1727,7 @@ The disinflation process has not progressed any further recently. Prices are ris
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-497136258&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-937624851&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -1371,17 +1906,17 @@ Crash --&gt; [*]
     
     <item>
       <title>Experience</title>
-      <link>http://localhost:1313/experience/</link>
+      <link>https://borisblagov.com/experience/</link>
       <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/experience/</guid>
+      <guid>https://borisblagov.com/experience/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Learn JavaScript</title>
-      <link>http://localhost:1313/teaching/js/</link>
+      <link>https://borisblagov.com/teaching/js/</link>
       <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/js/</guid>
+      <guid>https://borisblagov.com/teaching/js/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://hugoblox.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Blox Builder&lt;/a&gt; is designed to give technical content creators a seamless experience. You can focus on the content and the Hugo Blox Builder which this template is built upon handles the rest.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Embed videos, podcasts, code, LaTeX math, and even test students!&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;On this page, you&amp;rsquo;ll find some examples of the types of technical content that can be rendered with Hugo Blox.&lt;/p&gt;
@@ -1425,7 +1960,7 @@ Crash --&gt; [*]
 
 
 &lt;audio controls &gt;
-  &lt;source src=&#34;http://localhost:1313/teaching/js/ambient-piano.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+  &lt;source src=&#34;https://borisblagov.com/teaching/js/ambient-piano.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
 &lt;/audio&gt;
 
 &lt;h2 id=&#34;test-students&#34;&gt;Test students&lt;/h2&gt;
@@ -1502,9 +2037,9 @@ data.head()
     
     <item>
       <title>Spring Forecast 2022: Renewed pressure delays economic recovery in Germany once more</title>
-      <link>http://localhost:1313/forecast/forecast_kb_22_2/</link>
+      <link>https://borisblagov.com/forecast/forecast_kb_22_2/</link>
       <pubDate>Wed, 15 Jun 2022 11:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/forecast/forecast_kb_22_2/</guid>
+      <guid>https://borisblagov.com/forecast/forecast_kb_22_2/</guid>
       <description>&lt;p&gt;Economic activity in Germany has not improved markably in recent quarters. Following a decline in GDP in the fourth quarter of last year, output expanded only slightly in the first quarter. The weak economic recovery at the beginning of this year is likely to be due in significant part to the sharp rise in inflation, which has intensified again since the start of the war in Ukraine. The supply bottlenecks which have been delaying recovery from the economic consequences of the pandemic since last year temporarily eased somewhat at the beginning of this year. In the meantime, however, the problems with international logistics have been exacerbated again by the recent flare-up of infection in China.&lt;/p&gt;
 &lt;p&gt;The further course of economic recovery depends to a large extent on the development of inflation. It is becoming apparent that inflation will only weaken gradually. For exam-ple, the price increases for some raw materials, such as crude oil, are now easing. How-ever, prices for gas, which private households have to pay, are likely to continue to rise sharply in the coming months. Overall, consumer prices are expected to rise by 6.9% on average this year. In the coming year, we expect inflation to fall to 2.6% on average. The core rate is expected to be 4.1% and 2.3% respectively in the two years. Accordingly, the burdens on businesses and private households are expected to ease during the forecast period. The supply bottlenecks which continue to hamper production in the manufactur-ing sector will gradually ease in the second half of the year.&lt;/p&gt;
 &lt;p&gt;Against this background, GDP is expected to expand by 1.9% this year. We are thus revising our March forecast downward by 0.6% points. The main reason is that inflation has risen significantly more than expected in the previous forecast. For the coming year we expect GDP to increase by 2.7%.&lt;/p&gt;
@@ -1515,42 +2050,42 @@ data.head()
     
     <item>
       <title>Improving inference and forecasting in VAR models using cross-sectional information</title>
-      <link>http://localhost:1313/publication/2022_rep_pvar/</link>
+      <link>https://borisblagov.com/publication/2022_rep_pvar/</link>
       <pubDate>Wed, 01 Jun 2022 11:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/publication/2022_rep_pvar/</guid>
+      <guid>https://borisblagov.com/publication/2022_rep_pvar/</guid>
       <description>&lt;p&gt;The code for the model will be available on the webpage of my co-author Dr. Jan Prüser - &lt;a href=&#34;https://sites.google.com/view/janprueser/computer-code&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://sites.google.com/view/janprueser/computer-code&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Financial integration or financial fragmentation? A euro area perspective</title>
-      <link>http://localhost:1313/publication/2022_em/</link>
+      <link>https://borisblagov.com/publication/2022_em/</link>
       <pubDate>Fri, 13 May 2022 11:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/publication/2022_em/</guid>
+      <guid>https://borisblagov.com/publication/2022_em/</guid>
       <description></description>
     </item>
     
     <item>
       <title>The investment narrative: Improving private investment forecasts with media data</title>
-      <link>http://localhost:1313/publication/2021_rep_narratives/</link>
+      <link>https://borisblagov.com/publication/2021_rep_narratives/</link>
       <pubDate>Mon, 13 Dec 2021 11:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/publication/2021_rep_narratives/</guid>
+      <guid>https://borisblagov.com/publication/2021_rep_narratives/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Monetary policy uncertainty and inflation expectations</title>
-      <link>http://localhost:1313/publication/2021_rep_infexp/</link>
+      <link>https://borisblagov.com/publication/2021_rep_infexp/</link>
       <pubDate>Mon, 01 Mar 2021 11:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/publication/2021_rep_infexp/</guid>
+      <guid>https://borisblagov.com/publication/2021_rep_infexp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Joint Economic Forecast Fall 2020: Recovery loses momentum -Economy and politics further under the signs of the pandemic</title>
-      <link>http://localhost:1313/forecast/forecast_gd_20_3/</link>
+      <link>https://borisblagov.com/forecast/forecast_gd_20_3/</link>
       <pubDate>Wed, 14 Oct 2020 10:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/forecast/forecast_gd_20_3/</guid>
+      <guid>https://borisblagov.com/forecast/forecast_gd_20_3/</guid>
       <description>&lt;p&gt;The global economy will contract by 4.0% this year and the rebound is expected at 5.6% in 2021. In Europe, we expect the downturn to be more severe than the world, with the current projection for the EU27 economic growth standing at -7.0%. This is due in part to the worsening outlook of the pandemic in some of the major countries, notably France, Spain and the Netherlands.&lt;/p&gt;
  &lt;div style = &#34;text-align: left;&#34;&gt;
     &lt;embed style=&#34;border: none;&#34; src=&#34;basic-offline2.html&#34; dpi=&#34;600&#34; width=100% height=&#34;550px&#34; /&gt;
@@ -1559,7 +2094,7 @@ data.head()
 
 
 
-&lt;div id=&#34;chart-465978213&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-594183627&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -1577,7 +2112,7 @@ data.head()
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-465978213&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-594183627&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -1588,9 +2123,9 @@ data.head()
     
     <item>
       <title>Fall Forecast 2020: Global economy recovers from a historic collapse</title>
-      <link>http://localhost:1313/forecast/forecast_kb_20_3/</link>
+      <link>https://borisblagov.com/forecast/forecast_kb_20_3/</link>
       <pubDate>Tue, 15 Sep 2020 11:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/forecast/forecast_kb_20_3/</guid>
+      <guid>https://borisblagov.com/forecast/forecast_kb_20_3/</guid>
       <description>&lt;p&gt;The global economy experienced in the second quarter its worst decline since the Great Depression of the 1930s. Overall economic activity in the industrialized countries was 9.8% lower than in the first quarter. World trade also collapsed in the spring. At its lowest point in May, it was 17.2% below the level before the pandemic outbreak in December 2019.&lt;/p&gt;
 &lt;p&gt;Economic policy has adopted extensive measures to support the economy. Monetary policy has lowered interest rates and expanded asset purchase. Fiscal policy adopted extensive measures to support incomes of the private sector.&lt;/p&gt;
 &lt;p&gt;The latest monthly indicators on industrial production, consumer, and business sentiment suggest a strong recovery of the economic activity over the summer. The beginning of this rebound generally coincides with the decline of new infections and the associated gradual lifting of infection control measures. In June, the volume of world trade recovered significantly and the RWI/ISL container index rose noticeably in July. Daily mobility data also point to a gradual normalization of economic activity in many economic sectors. Tourism, however, is a major exception.&lt;/p&gt;
@@ -1601,9 +2136,9 @@ data.head()
     
     <item>
       <title>The effects of COVID-19 on the Italian economy</title>
-      <link>http://localhost:1313/post/2020_03_29/</link>
+      <link>https://borisblagov.com/post/2020_03_29/</link>
       <pubDate>Mon, 23 Mar 2020 11:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2020_03_29/</guid>
+      <guid>https://borisblagov.com/post/2020_03_29/</guid>
       <description>&lt;p&gt;&lt;em&gt;Disclaimer: This is a loose translation of the analysis &amp;ldquo;The effects of COVID-19 on the Italian economy&amp;rdquo; which was published in the &lt;a href=&#34;https://www.side-iea.it/sites/side-iea.it/files/iceee2019lecce_final_program.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RWI Spring international forecast&lt;/a&gt;. The analysis was finalized on the 19th of March 2020 and therefore does not include newer developments. This translation is my own and is therefore not affiliated with RWI - Leibniz Institute for economic research in any way. All the errors are my own.&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;Assuming that&lt;/p&gt;
@@ -1651,14 +2186,14 @@ Data used are from 2000 onwards. Monthly data are available until December 2019 
 &lt;li&gt;Car registrations fall by 50% in March and, like industrial production, remain at this level for another month.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;We plot those assumptions on Figure 1.&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/post/2020_03_29/Counterfactual_monthly.png&#34;&gt;&lt;figcaption&gt;
+&lt;figure&gt;&lt;img src=&#34;https://borisblagov.com/post/2020_03_29/Counterfactual_monthly.png&#34;&gt;&lt;figcaption&gt;
       &lt;h4&gt;Assumptions on the effects of COVID-19 on industrial production, new arrivals, overnight stays and car registrations (red) and conuterfactual scenario (blue).&lt;/h4&gt;
     &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Based on the experience of the quarantine measures taken in China (Wu &amp;amp; McGoogan 2020), we expect the situation to get better from May onwards. In the three months past May there will be a return to the original level of the four variables. In tourism, the level of both variables remains about 5% below the counterfactual scenario in the summer. With the help of an MF-VAR these variables are forecast for the period from October 2020 onwards. In Figure 1, the developments are shown in blue. An overshoot over the values of the counterfactual scenario is to be expected for industrial production and new car registrations.&lt;/p&gt;
 &lt;p&gt;Figure 2 shows the model forecasts for GDP and private consumption. If the virus had not spread, both aggregates would have risen at decreasing rates, but consistently. Under the assumptions made here, the spread of COVID-19 is likely to reduce real GDP and private consumption significantly in the first half of the year. In the second half of the year, expansion rates should then be well above potential rates due to catch-up effects. All in all, the overall economic activity in Italy is expected to decline by 2.4% this year. In contrast, GDP and consumer spending will rise by 0.2% in the alternative scenario, while private consumption is likely to decline by 0.9% in 2020. This results in a &lt;strong&gt;negative GDP effect of COVID-19 of about 2.6% on GDP&lt;/strong&gt; and &lt;strong&gt;1.1% on private consumption.&lt;/strong&gt;&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/post/2020_03_29/Counterfactual_quarterly.png&#34;&gt;&lt;figcaption&gt;
+&lt;figure&gt;&lt;img src=&#34;https://borisblagov.com/post/2020_03_29/Counterfactual_quarterly.png&#34;&gt;&lt;figcaption&gt;
       &lt;h4&gt;The effects of COVID-19 on Gross domestic product (left) and Personal consumption (right) in red versus the counterfactual scernaio in blue.&lt;/h4&gt;
     &lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -1669,9 +2204,9 @@ Data used are from 2000 onwards. Monthly data are available until December 2019 
     
     <item>
       <title>Economic development abroad: COVID-19 keeps the world economy in suspense</title>
-      <link>http://localhost:1313/forecast/forecast_kb_20_1/</link>
+      <link>https://borisblagov.com/forecast/forecast_kb_20_1/</link>
       <pubDate>Thu, 19 Mar 2020 11:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/forecast/forecast_kb_20_1/</guid>
+      <guid>https://borisblagov.com/forecast/forecast_kb_20_1/</guid>
       <description>&lt;p&gt;Since early 2020, the world economy is in the grip of the COVID-19 pandemic. Initially, Asia  was  particularly  affected.  In  China,  economic  activity  declined  significantly.  The shock transmitted to other Asian countries via value chains. Some countries were affected by the absence of Chinese tourists. Since February, the corona virus also spread in Europe and the USA at such a pace that some countries took drastic measures to contain the pandemic. A curfew was imposed in many European countries and trade activities were reduced to basic supplies. In addition, many countries have closed their borders to passenger traffic and suspended air traffic. All this is severely restricting economic activity.&lt;/p&gt;
 &lt;div class=&#34;flourish-embed flourish-chart&#34; data-src=&#34;visualisation/12704155&#34;&gt;&lt;script src=&#34;https://public.flourish.studio/resources/embed.js&#34;&gt;&lt;/script&gt;&lt;/div&gt;
 </description>
@@ -1679,26 +2214,26 @@ Data used are from 2000 onwards. Monthly data are available until December 2019 
     
     <item>
       <title>Exchange rate uncertainty and import prices in the euro area</title>
-      <link>http://localhost:1313/publication/2019_eru/</link>
+      <link>https://borisblagov.com/publication/2019_eru/</link>
       <pubDate>Fri, 16 Aug 2019 11:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/publication/2019_eru/</guid>
+      <guid>https://borisblagov.com/publication/2019_eru/</guid>
       <description></description>
     </item>
     
     <item>
       <title>The regime-dependent evolution of credibility: a fresh look at Hong Kong&#39;s linked exchange rate system</title>
-      <link>http://localhost:1313/publication/2019_md/</link>
+      <link>https://borisblagov.com/publication/2019_md/</link>
       <pubDate>Fri, 16 Aug 2019 11:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/publication/2019_md/</guid>
+      <guid>https://borisblagov.com/publication/2019_md/</guid>
       <description></description>
     </item>
     
     <item>
       <title>An example preprint / working paper</title>
-      <link>http://localhost:1313/publication/preprint/</link>
+      <link>https://borisblagov.com/publication/preprint/</link>
       <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publication/preprint/</guid>
-      <description>&lt;p&gt;This work is driven by the results in my &lt;a href=&#34;http://localhost:1313/publication/conference-paper/&#34;&gt;previous paper&lt;/a&gt; on LLMs.&lt;/p&gt;
+      <guid>https://borisblagov.com/publication/preprint/</guid>
+      <description>&lt;p&gt;This work is driven by the results in my &lt;a href=&#34;https://borisblagov.com/publication/conference-paper/&#34;&gt;previous paper&lt;/a&gt; on LLMs.&lt;/p&gt;
 &lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
 &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
   &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
@@ -1711,10 +2246,10 @@ Data used are from 2000 onwards. Monthly data are available until December 2019 
     
     <item>
       <title>Presenting at the Eighth Italian  Congress of Econometrics and Empirical Economics</title>
-      <link>http://localhost:1313/post/2019_01_21/</link>
+      <link>https://borisblagov.com/post/2019_01_21/</link>
       <pubDate>Mon, 21 Jan 2019 11:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2019_01_21/</guid>
-      <description>&lt;p&gt;I will be attending &lt;a href=&#34;https://www.side-iea.it/events/iceee/iceee-2019&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ICEEE 2019&lt;/a&gt; conference in Lecce, Italy where I will present my paper &lt;a href=&#34;http://localhost:1313/publication/2018_eru/&#34;&gt;Exchange rate uncertainty and import prices in the euro area&lt;/a&gt; on &lt;strong&gt;Friday, the 25-th&lt;/strong&gt;. My talk will take place in &lt;strong&gt;Room 3&lt;/strong&gt; of Building 6 (Campus Studium 2000) in the session from &lt;strong&gt;14:30 to 16:10&lt;/strong&gt;.&lt;/p&gt;
+      <guid>https://borisblagov.com/post/2019_01_21/</guid>
+      <description>&lt;p&gt;I will be attending &lt;a href=&#34;https://www.side-iea.it/events/iceee/iceee-2019&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ICEEE 2019&lt;/a&gt; conference in Lecce, Italy where I will present my paper &lt;a href=&#34;https://borisblagov.com/publication/2018_eru/&#34;&gt;Exchange rate uncertainty and import prices in the euro area&lt;/a&gt; on &lt;strong&gt;Friday, the 25-th&lt;/strong&gt;. My talk will take place in &lt;strong&gt;Room 3&lt;/strong&gt; of Building 6 (Campus Studium 2000) in the session from &lt;strong&gt;14:30 to 16:10&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;I have created a calendar &lt;code&gt;.ics&lt;/code&gt; file which mimics page 3 from the &lt;a href=&#34;https://www.side-iea.it/sites/side-iea.it/files/iceee2019lecce_final_program.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;program&lt;/a&gt;. You may import it in your calendar app and add the Rooms to the sessions that you want to attend. The events have &lt;em&gt;no&lt;/em&gt; notifications by default.&lt;/p&gt;
 &lt;p&gt;Download the .ics &lt;a href=&#34;ICEEE2019.ics&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;After you have successfully imported it should look like this:&lt;/p&gt;
@@ -1740,7 +2275,7 @@ Data used are from 2000 onwards. Monthly data are available until December 2019 
                /post/2019_01_21/Calendar_img_hu7941219577369447775.webp 400w,
                /post/2019_01_21/Calendar_img_hu12124119555196175357.webp 760w,
                /post/2019_01_21/Calendar_img_hu16538885527389603479.webp 1200w&#34;
-               src=&#34;http://localhost:1313/post/2019_01_21/Calendar_img_hu7941219577369447775.webp&#34;
+               src=&#34;https://borisblagov.com/post/2019_01_21/Calendar_img_hu7941219577369447775.webp&#34;
                width=&#34;760&#34;
                height=&#34;468&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -1753,25 +2288,25 @@ Data used are from 2000 onwards. Monthly data are available until December 2019 
     
     <item>
       <title>Financial crises and time-varying risk premia in a small open economy: a Markov-switching DSGE model for Estonia</title>
-      <link>http://localhost:1313/publication/2018_ee/</link>
+      <link>https://borisblagov.com/publication/2018_ee/</link>
       <pubDate>Wed, 02 May 2018 11:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/publication/2018_ee/</guid>
+      <guid>https://borisblagov.com/publication/2018_ee/</guid>
       <description></description>
     </item>
     
     <item>
       <title>The credibility of Hong Kong&#39;s currency board system: looking through the prism of MS‐VAR models with time‐varying transition probabilities</title>
-      <link>http://localhost:1313/publication/2016_ob/</link>
+      <link>https://borisblagov.com/publication/2016_ob/</link>
       <pubDate>Wed, 06 Jul 2016 11:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/publication/2016_ob/</guid>
+      <guid>https://borisblagov.com/publication/2016_ob/</guid>
       <description></description>
     </item>
     
     <item>
       <title>An example journal article</title>
-      <link>http://localhost:1313/publication/journal-article/</link>
+      <link>https://borisblagov.com/publication/journal-article/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publication/journal-article/</guid>
+      <guid>https://borisblagov.com/publication/journal-article/</guid>
       <description>&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
 &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
   &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
@@ -1790,17 +2325,17 @@ Data used are from 2000 onwards. Monthly data are available until December 2019 
     
     <item>
       <title>Modelling the time-variation in euro area lending spreads</title>
-      <link>http://localhost:1313/publication/2015_bis/</link>
+      <link>https://borisblagov.com/publication/2015_bis/</link>
       <pubDate>Tue, 07 Apr 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publication/2015_bis/</guid>
+      <guid>https://borisblagov.com/publication/2015_bis/</guid>
       <description></description>
     </item>
     
     <item>
       <title>An example conference paper</title>
-      <link>http://localhost:1313/publication/conference-paper/</link>
+      <link>https://borisblagov.com/publication/conference-paper/</link>
       <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publication/conference-paper/</guid>
+      <guid>https://borisblagov.com/publication/conference-paper/</guid>
       <description>&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
 &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
   &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;

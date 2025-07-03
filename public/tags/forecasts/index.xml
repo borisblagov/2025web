@@ -2,37 +2,34 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Forecasts | Boris Blagov&#39;s personal website</title>
-    <link>http://localhost:1313/tags/forecasts/</link>
-      <atom:link href="http://localhost:1313/tags/forecasts/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://borisblagov.com/tags/forecasts/</link>
+      <atom:link href="https://borisblagov.com/tags/forecasts/index.xml" rel="self" type="application/rss+xml" />
     <description>Forecasts</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 12 Jun 2025 10:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/media/icon_hu12593946659221199760.png</url>
+      <url>https://borisblagov.com/media/icon_hu12593946659221199760.png</url>
       <title>Forecasts</title>
-      <link>http://localhost:1313/tags/forecasts/</link>
+      <link>https://borisblagov.com/tags/forecasts/</link>
     </image>
     
     <item>
       <title>Early summer 2025: Global economy under the spell of trade policy</title>
-      <link>http://localhost:1313/forecast/forecast_kb_25_2/</link>
+      <link>https://borisblagov.com/forecast/forecast_kb_25_2/</link>
       <pubDate>Thu, 12 Jun 2025 10:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/forecast/forecast_kb_25_2/</guid>
-      <description>&lt;p&gt;The extent to which the German economy&amp;rsquo;s current problems are structural is demonstrated by the persistence of its weak growth: economic output continued to decline at the end of the year. German exports in particular have fallen sharply, especially deliveries to China. German ex-porters are now losing ground to China for the fourth year in a row. Weak foreign demand is contributing to a further decline in investment in equipment. However, there is also a lack of impetus from the domestic market: Low capacity utilization in many sectors of the economy and the alarmingly high level of uncertainty about the economic environment in Germany are causing companies to postpone investments. Only private consumption increased slightly at the end of the year.&lt;/p&gt;
-&lt;p&gt;Uncertainty is likely to have increased further in the first few months of this year. Firstly, the fact that the federal elections have been brought forward to February 2025 has led to decisions being postponed until then. In addition, the rhetoric and decisions of the US administration, which has been in office since January, have drastically increased international uncertainty and, as a result, the real geopolitical risks have risen considerably. The geopolitical risks have also increased, above all because the US-administration has become less willing to defend Europe.&lt;/p&gt;
-&lt;p&gt;Despite all this, the structural problems of the German economy remain. For example, im-portant decisions on energy and climate policy, which would be suitable for ensuring an effi-cient energy transition, have yet to be taken. It is also not yet clear whether the future governing parties will be able to agree on tangible steps in the areas of digitalization and bureaucracy re-duction. However, the already confirmed plans of the future coalition partners to reform the debt brake so that - apart from a base of one percent of economic output - investments in de-fense are not taken into account when calculating the relevant debt, as well as the creation of a new special fund for infrastructure renewal are likely to have a noticeable effect on overall eco-nomic demand. As a 2/3 majority in the German parliament is required to amend the debt brake, implementation is still uncertain. In addition, the implementation of the measures is likely to take some time, meaning that demand effects are not expected until next year.&lt;/p&gt;
-&lt;p&gt;For this reason, although we are assuming a further increase in defense and investment spending in this forecast, we are assuming a significantly lower total volume than the EUR 900 billion currently discussed. In addition, many measures in other policy areas are now likely to be tackled later. Important framework conditions in energy and climate policy, for example, are likely to be delayed as a result.&lt;/p&gt;
-&lt;p&gt;Against this backdrop, we expect a stagnation of economic activity in the first half of the year and a slightly positive growth rates afterwards. The average for the year is a decline of 0.1%. The recovery is likely to strengthen somewhat in the coming year. It is assumed that the overall eco-nomic uncertainty will gradually decrease. However, this requires the new federal government to present a concept for strengthening economic growth that also includes the economic framework conditions. Another prerequisite is that the tariff conflict with the USA can be re-solved in the course of this year. In this case, private consumption is likely to increase more strongly and the savings rate should fall slightly. With interest rates continuing to fall, invest-ments are also likely to gradually increase again. GDP is likely to increase by an annual average of 1.2% in 2026.
-The labor market indicators suggest that unemployment will increase slightly. With the eco-nomic recovery expected in the second half of 2025, unemployment is likely to fall moderately by the end of the forecast period. The unemployment rate is expected to rise to 6.2% this year and fall to 6.1% next year. Overall, the number of people in employment will also continue to fall slightly in the forecast period - by around 45,000 people this year and by a further 15,000 people next year.&lt;/p&gt;
-&lt;p&gt;The inflation rate has risen continuously since its low of 1.6% in September last year, reach-ing 2.6% in December. There have been signs of a trend reversal since the beginning of this year. The decline is particularly evident when looking at the core rate of inflation (overall index excluding energy and food). This is expected to fall from 3.3% in December to 2.6% in Febru-ary. Overall, inflation is expected to be 2% both in the current year and in 2026.&lt;/p&gt;
-&lt;p&gt;According to the policy measures, fiscal policy in the current year is restrictive. Although there are some expansionary stimuli such as changes to income tax and the Tax Reform Act, the end of measures such as the tax-free inflation compensation premium will have a noticeably restric-tive effect in addition to the increased revenue from higher social security contribution rates. In 2026, the fiscal policy measures are likely to be roughly neutral. However, the upcoming change of government could significantly change the direction of fiscal policy in the coming year.&lt;/p&gt;
+      <guid>https://borisblagov.com/forecast/forecast_kb_25_2/</guid>
+      <description>&lt;p&gt;The global economy is currently under the influence of trade conflicts. Tariffs are burdening trade and industrial production, and the sword of Damocles of high economic uncertainty hangs over the future economic development. The effective US import tariff rate is currently higher than at any time since World War II. With the currently suspended country-specific &amp;ldquo;re-ciprocal&amp;rdquo; tariffs, it would even be higher than at any time since the Great Depression of the 1930s. At the same time, the unpredictability of US trade policy has catapulted economic un-certainty to unprecedented heights.&lt;/p&gt;
+&lt;p&gt;In the first quarter of 2025, the global economy grew moderately, although the effects of the trade conflicts were already being felt. In the run-up to the announced US import tariff increas-es, exports of the euro area and of China increased, and US imports increased, in some cases significantly.
+Commodity prices have fallen substantially over the recent months. With the decline in energy prices, the disinflation process has continued. However, core inflation excluding energy and food prices remains high. In many countries, service prices remain the main drivers of inflation. The central banks of major economies have responded to the varying inflation trends. For ex-ample, the ECB has already lowered its deposit rate four times this year, while the US Federal Reserve has left its key interest rate unchanged since December 2024, likely due to uncertainty regarding the inflationary effects of US import tariffs.&lt;/p&gt;
+&lt;p&gt;The global economy is expected to expand moderately over the forecast period. Growth of 2.5% is expected for the current year and 2.3% for the next. This should be driven by the de-cline in inflation and robust labour markets, strengthening private consumption. Investment is expected to be stimulated by lower real interest rates.&lt;/p&gt;
+&lt;p&gt;Trade policy poses a significant downside risk to the forecast. Fiscal risks are also increasing. Government debt is already high in many countries, and spending pressure is increasing in areas such as defence, investments in the green transition, and the costs associated with an aging population. Geopolitical risks also remain high. The economy would perform better than expected, not least if there is a rapid resolution to the tariff dispute, thus reducing economic and political uncertainty.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Economic Forecast Spring 2025: Export crisis and political uncertainty weigh on German economy</title>
-      <link>http://localhost:1313/forecast/forecast_kb_25_1/</link>
+      <link>https://borisblagov.com/forecast/forecast_kb_25_1/</link>
       <pubDate>Thu, 13 Mar 2025 10:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/forecast/forecast_kb_25_1/</guid>
+      <guid>https://borisblagov.com/forecast/forecast_kb_25_1/</guid>
       <description>&lt;p&gt;The extent to which the German economy&amp;rsquo;s current problems are structural is demonstrated by the persistence of its weak growth: economic output continued to decline at the end of the year. German exports in particular have fallen sharply, especially deliveries to China. German ex-porters are now losing ground to China for the fourth year in a row. Weak foreign demand is contributing to a further decline in investment in equipment. However, there is also a lack of impetus from the domestic market: Low capacity utilization in many sectors of the economy and the alarmingly high level of uncertainty about the economic environment in Germany are causing companies to postpone investments. Only private consumption increased slightly at the end of the year.&lt;/p&gt;
 &lt;p&gt;Uncertainty is likely to have increased further in the first few months of this year. Firstly, the fact that the federal elections have been brought forward to February 2025 has led to decisions being postponed until then. In addition, the rhetoric and decisions of the US administration, which has been in office since January, have drastically increased international uncertainty and, as a result, the real geopolitical risks have risen considerably. The geopolitical risks have also increased, above all because the US-administration has become less willing to defend Europe.&lt;/p&gt;
 &lt;p&gt;Despite all this, the structural problems of the German economy remain. For example, im-portant decisions on energy and climate policy, which would be suitable for ensuring an effi-cient energy transition, have yet to be taken. It is also not yet clear whether the future governing parties will be able to agree on tangible steps in the areas of digitalization and bureaucracy re-duction. However, the already confirmed plans of the future coalition partners to reform the debt brake so that - apart from a base of one percent of economic output - investments in de-fense are not taken into account when calculating the relevant debt, as well as the creation of a new special fund for infrastructure renewal are likely to have a noticeable effect on overall eco-nomic demand. As a 2/3 majority in the German parliament is required to amend the debt brake, implementation is still uncertain. In addition, the implementation of the measures is likely to take some time, meaning that demand effects are not expected until next year.&lt;/p&gt;
@@ -46,9 +43,9 @@ The labor market indicators suggest that unemployment will increase slightly. Wi
     
     <item>
       <title>World Economic Forecast Winter 2024: Global Economy Grows Moderately Amid High Political Uncertainty</title>
-      <link>http://localhost:1313/forecast/forecast_kb_24_4/</link>
+      <link>https://borisblagov.com/forecast/forecast_kb_24_4/</link>
       <pubDate>Sat, 14 Dec 2024 10:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/forecast/forecast_kb_24_4/</guid>
+      <guid>https://borisblagov.com/forecast/forecast_kb_24_4/</guid>
       <description>&lt;p&gt;The global economy maintained its solid growth trajectory this summer, driven primarily by the strong expansion in the USA. Global industrial production picked up significantly in spring and summer, particularly in Asia. Parallel to industrial production, global trade in goods also expanded noticeably until the summer. However, current data suggests that the upturn in industrial production and in global trade is unlikely to
 persist. Industrial production and global trade fell in September. The global purchasing managers&amp;rsquo; index for the manufacturing sector also suggests that the fundamental weakness in industry is continuing.
 The disinflation process has not progressed any further recently. Prices are rising sharply in the services sector, which is why core inflation excluding energy and food is stubbornly persistent.&lt;/p&gt;
@@ -58,9 +55,9 @@ The disinflation process has not progressed any further recently. Prices are ris
     
     <item>
       <title>Spring Forecast 2022: Renewed pressure delays economic recovery in Germany once more</title>
-      <link>http://localhost:1313/forecast/forecast_kb_22_2/</link>
+      <link>https://borisblagov.com/forecast/forecast_kb_22_2/</link>
       <pubDate>Wed, 15 Jun 2022 11:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/forecast/forecast_kb_22_2/</guid>
+      <guid>https://borisblagov.com/forecast/forecast_kb_22_2/</guid>
       <description>&lt;p&gt;Economic activity in Germany has not improved markably in recent quarters. Following a decline in GDP in the fourth quarter of last year, output expanded only slightly in the first quarter. The weak economic recovery at the beginning of this year is likely to be due in significant part to the sharp rise in inflation, which has intensified again since the start of the war in Ukraine. The supply bottlenecks which have been delaying recovery from the economic consequences of the pandemic since last year temporarily eased somewhat at the beginning of this year. In the meantime, however, the problems with international logistics have been exacerbated again by the recent flare-up of infection in China.&lt;/p&gt;
 &lt;p&gt;The further course of economic recovery depends to a large extent on the development of inflation. It is becoming apparent that inflation will only weaken gradually. For exam-ple, the price increases for some raw materials, such as crude oil, are now easing. How-ever, prices for gas, which private households have to pay, are likely to continue to rise sharply in the coming months. Overall, consumer prices are expected to rise by 6.9% on average this year. In the coming year, we expect inflation to fall to 2.6% on average. The core rate is expected to be 4.1% and 2.3% respectively in the two years. Accordingly, the burdens on businesses and private households are expected to ease during the forecast period. The supply bottlenecks which continue to hamper production in the manufactur-ing sector will gradually ease in the second half of the year.&lt;/p&gt;
 &lt;p&gt;Against this background, GDP is expected to expand by 1.9% this year. We are thus revising our March forecast downward by 0.6% points. The main reason is that inflation has risen significantly more than expected in the previous forecast. For the coming year we expect GDP to increase by 2.7%.&lt;/p&gt;
@@ -71,9 +68,9 @@ The disinflation process has not progressed any further recently. Prices are ris
     
     <item>
       <title>Joint Economic Forecast Fall 2020: Recovery loses momentum -Economy and politics further under the signs of the pandemic</title>
-      <link>http://localhost:1313/forecast/forecast_gd_20_3/</link>
+      <link>https://borisblagov.com/forecast/forecast_gd_20_3/</link>
       <pubDate>Wed, 14 Oct 2020 10:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/forecast/forecast_gd_20_3/</guid>
+      <guid>https://borisblagov.com/forecast/forecast_gd_20_3/</guid>
       <description>&lt;p&gt;The global economy will contract by 4.0% this year and the rebound is expected at 5.6% in 2021. In Europe, we expect the downturn to be more severe than the world, with the current projection for the EU27 economic growth standing at -7.0%. This is due in part to the worsening outlook of the pandemic in some of the major countries, notably France, Spain and the Netherlands.&lt;/p&gt;
  &lt;div style = &#34;text-align: left;&#34;&gt;
     &lt;embed style=&#34;border: none;&#34; src=&#34;basic-offline2.html&#34; dpi=&#34;600&#34; width=100% height=&#34;550px&#34; /&gt;
@@ -82,7 +79,7 @@ The disinflation process has not progressed any further recently. Prices are ris
 
 
 
-&lt;div id=&#34;chart-768231945&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-594183627&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -100,7 +97,7 @@ The disinflation process has not progressed any further recently. Prices are ris
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-768231945&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-594183627&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -111,9 +108,9 @@ The disinflation process has not progressed any further recently. Prices are ris
     
     <item>
       <title>Fall Forecast 2020: Global economy recovers from a historic collapse</title>
-      <link>http://localhost:1313/forecast/forecast_kb_20_3/</link>
+      <link>https://borisblagov.com/forecast/forecast_kb_20_3/</link>
       <pubDate>Tue, 15 Sep 2020 11:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/forecast/forecast_kb_20_3/</guid>
+      <guid>https://borisblagov.com/forecast/forecast_kb_20_3/</guid>
       <description>&lt;p&gt;The global economy experienced in the second quarter its worst decline since the Great Depression of the 1930s. Overall economic activity in the industrialized countries was 9.8% lower than in the first quarter. World trade also collapsed in the spring. At its lowest point in May, it was 17.2% below the level before the pandemic outbreak in December 2019.&lt;/p&gt;
 &lt;p&gt;Economic policy has adopted extensive measures to support the economy. Monetary policy has lowered interest rates and expanded asset purchase. Fiscal policy adopted extensive measures to support incomes of the private sector.&lt;/p&gt;
 &lt;p&gt;The latest monthly indicators on industrial production, consumer, and business sentiment suggest a strong recovery of the economic activity over the summer. The beginning of this rebound generally coincides with the decline of new infections and the associated gradual lifting of infection control measures. In June, the volume of world trade recovered significantly and the RWI/ISL container index rose noticeably in July. Daily mobility data also point to a gradual normalization of economic activity in many economic sectors. Tourism, however, is a major exception.&lt;/p&gt;
@@ -124,9 +121,9 @@ The disinflation process has not progressed any further recently. Prices are ris
     
     <item>
       <title>The effects of COVID-19 on the Italian economy</title>
-      <link>http://localhost:1313/post/2020_03_29/</link>
+      <link>https://borisblagov.com/post/2020_03_29/</link>
       <pubDate>Mon, 23 Mar 2020 11:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2020_03_29/</guid>
+      <guid>https://borisblagov.com/post/2020_03_29/</guid>
       <description>&lt;p&gt;&lt;em&gt;Disclaimer: This is a loose translation of the analysis &amp;ldquo;The effects of COVID-19 on the Italian economy&amp;rdquo; which was published in the &lt;a href=&#34;https://www.side-iea.it/sites/side-iea.it/files/iceee2019lecce_final_program.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RWI Spring international forecast&lt;/a&gt;. The analysis was finalized on the 19th of March 2020 and therefore does not include newer developments. This translation is my own and is therefore not affiliated with RWI - Leibniz Institute for economic research in any way. All the errors are my own.&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;Assuming that&lt;/p&gt;
@@ -174,14 +171,14 @@ Data used are from 2000 onwards. Monthly data are available until December 2019 
 &lt;li&gt;Car registrations fall by 50% in March and, like industrial production, remain at this level for another month.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;We plot those assumptions on Figure 1.&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/post/2020_03_29/Counterfactual_monthly.png&#34;&gt;&lt;figcaption&gt;
+&lt;figure&gt;&lt;img src=&#34;https://borisblagov.com/post/2020_03_29/Counterfactual_monthly.png&#34;&gt;&lt;figcaption&gt;
       &lt;h4&gt;Assumptions on the effects of COVID-19 on industrial production, new arrivals, overnight stays and car registrations (red) and conuterfactual scenario (blue).&lt;/h4&gt;
     &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Based on the experience of the quarantine measures taken in China (Wu &amp;amp; McGoogan 2020), we expect the situation to get better from May onwards. In the three months past May there will be a return to the original level of the four variables. In tourism, the level of both variables remains about 5% below the counterfactual scenario in the summer. With the help of an MF-VAR these variables are forecast for the period from October 2020 onwards. In Figure 1, the developments are shown in blue. An overshoot over the values of the counterfactual scenario is to be expected for industrial production and new car registrations.&lt;/p&gt;
 &lt;p&gt;Figure 2 shows the model forecasts for GDP and private consumption. If the virus had not spread, both aggregates would have risen at decreasing rates, but consistently. Under the assumptions made here, the spread of COVID-19 is likely to reduce real GDP and private consumption significantly in the first half of the year. In the second half of the year, expansion rates should then be well above potential rates due to catch-up effects. All in all, the overall economic activity in Italy is expected to decline by 2.4% this year. In contrast, GDP and consumer spending will rise by 0.2% in the alternative scenario, while private consumption is likely to decline by 0.9% in 2020. This results in a &lt;strong&gt;negative GDP effect of COVID-19 of about 2.6% on GDP&lt;/strong&gt; and &lt;strong&gt;1.1% on private consumption.&lt;/strong&gt;&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/post/2020_03_29/Counterfactual_quarterly.png&#34;&gt;&lt;figcaption&gt;
+&lt;figure&gt;&lt;img src=&#34;https://borisblagov.com/post/2020_03_29/Counterfactual_quarterly.png&#34;&gt;&lt;figcaption&gt;
       &lt;h4&gt;The effects of COVID-19 on Gross domestic product (left) and Personal consumption (right) in red versus the counterfactual scernaio in blue.&lt;/h4&gt;
     &lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -192,9 +189,9 @@ Data used are from 2000 onwards. Monthly data are available until December 2019 
     
     <item>
       <title>Economic development abroad: COVID-19 keeps the world economy in suspense</title>
-      <link>http://localhost:1313/forecast/forecast_kb_20_1/</link>
+      <link>https://borisblagov.com/forecast/forecast_kb_20_1/</link>
       <pubDate>Thu, 19 Mar 2020 11:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/forecast/forecast_kb_20_1/</guid>
+      <guid>https://borisblagov.com/forecast/forecast_kb_20_1/</guid>
       <description>&lt;p&gt;Since early 2020, the world economy is in the grip of the COVID-19 pandemic. Initially, Asia  was  particularly  affected.  In  China,  economic  activity  declined  significantly.  The shock transmitted to other Asian countries via value chains. Some countries were affected by the absence of Chinese tourists. Since February, the corona virus also spread in Europe and the USA at such a pace that some countries took drastic measures to contain the pandemic. A curfew was imposed in many European countries and trade activities were reduced to basic supplies. In addition, many countries have closed their borders to passenger traffic and suspended air traffic. All this is severely restricting economic activity.&lt;/p&gt;
 &lt;div class=&#34;flourish-embed flourish-chart&#34; data-src=&#34;visualisation/12704155&#34;&gt;&lt;script src=&#34;https://public.flourish.studio/resources/embed.js&#34;&gt;&lt;/script&gt;&lt;/div&gt;
 </description>

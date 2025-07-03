@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Narrative Economics | Boris Blagov&#39;s personal website</title>
-    <link>http://localhost:1313/tags/narrative-economics/</link>
-      <atom:link href="http://localhost:1313/tags/narrative-economics/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://borisblagov.com/tags/narrative-economics/</link>
+      <atom:link href="https://borisblagov.com/tags/narrative-economics/index.xml" rel="self" type="application/rss+xml" />
     <description>Narrative Economics</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 13 Dec 2021 11:00:00 +0100</lastBuildDate>
     <image>
-      <url>http://localhost:1313/media/icon_hu12593946659221199760.png</url>
+      <url>https://borisblagov.com/media/icon_hu12593946659221199760.png</url>
       <title>Narrative Economics</title>
-      <link>http://localhost:1313/tags/narrative-economics/</link>
+      <link>https://borisblagov.com/tags/narrative-economics/</link>
     </image>
     
     <item>
       <title>The investment narrative: Improving private investment forecasts with media data</title>
-      <link>http://localhost:1313/publication/2021_rep_narratives/</link>
+      <link>https://borisblagov.com/publication/2021_rep_narratives/</link>
       <pubDate>Mon, 13 Dec 2021 11:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/publication/2021_rep_narratives/</guid>
+      <guid>https://borisblagov.com/publication/2021_rep_narratives/</guid>
       <description></description>
     </item>
     

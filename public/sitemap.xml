@@ -2,307 +2,311 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/post/</loc>
+    <loc>https://borisblagov.com/post/</loc>
     <lastmod>3023-10-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/event/example/</loc>
+    <loc>https://borisblagov.com/event/example/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/event/</loc>
+    <loc>https://borisblagov.com/event/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/forecast/forecast_kb_25_2/</loc>
+    <loc>https://borisblagov.com/post/2025_07_03-bg-mf-var/</loc>
+    <lastmod>2025-07-03T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://borisblagov.com/forecast/forecast_kb_25_2/</loc>
     <lastmod>2025-06-12T10:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/tags/forecasts/</loc>
+    <loc>https://borisblagov.com/tags/forecasts/</loc>
     <lastmod>2025-06-12T10:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/forecast/</loc>
+    <loc>https://borisblagov.com/forecast/</loc>
     <lastmod>2025-06-12T10:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/publication_types/</loc>
+    <loc>https://borisblagov.com/publication_types/</loc>
     <lastmod>2025-06-12T10:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/publication_types/report/</loc>
+    <loc>https://borisblagov.com/publication_types/report/</loc>
     <lastmod>2025-06-12T10:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://borisblagov.com/tags/</loc>
     <lastmod>2025-06-12T10:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/post/2025_05_20-relaunch/</loc>
+    <loc>https://borisblagov.com/post/2025_05_20-relaunch/</loc>
     <lastmod>2025-05-20T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/forecast/forecast_kb_25_1/</loc>
+    <loc>https://borisblagov.com/forecast/forecast_kb_25_1/</loc>
     <lastmod>2025-03-13T10:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/teaching/2025_internationaleconomics/</loc>
+    <loc>https://borisblagov.com/teaching/2025_internationaleconomics/</loc>
     <lastmod>2025-01-25T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/teaching/python/</loc>
+    <loc>https://borisblagov.com/teaching/python/</loc>
     <lastmod>2025-01-25T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/teaching/</loc>
+    <loc>https://borisblagov.com/teaching/</loc>
     <lastmod>2025-01-25T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/forecast/forecast_kb_24_4/</loc>
+    <loc>https://borisblagov.com/forecast/forecast_kb_24_4/</loc>
     <lastmod>2024-12-14T10:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://borisblagov.com/</loc>
     <lastmod>2024-10-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/publication/</loc>
+    <loc>https://borisblagov.com/publication/</loc>
     <lastmod>2024-10-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/publication/2024_bfd/</loc>
+    <loc>https://borisblagov.com/publication/2024_bfd/</loc>
     <lastmod>2024-10-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/tags/uncertainty/</loc>
+    <loc>https://borisblagov.com/tags/uncertainty/</loc>
     <lastmod>2024-10-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/projects/</loc>
+    <loc>https://borisblagov.com/projects/</loc>
     <lastmod>2024-05-19T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/tags/hugo/</loc>
+    <loc>https://borisblagov.com/tags/hugo/</loc>
     <lastmod>2023-10-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/tags/markdown/</loc>
+    <loc>https://borisblagov.com/tags/markdown/</loc>
     <lastmod>2023-10-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/project/pandas/</loc>
+    <loc>https://borisblagov.com/project/pandas/</loc>
     <lastmod>2023-10-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/project/</loc>
+    <loc>https://borisblagov.com/project/</loc>
     <lastmod>2023-10-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/project/pytorch/</loc>
+    <loc>https://borisblagov.com/project/pytorch/</loc>
     <lastmod>2023-10-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/project/scikit/</loc>
+    <loc>https://borisblagov.com/project/scikit/</loc>
     <lastmod>2023-10-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/tags/wowchemy/</loc>
+    <loc>https://borisblagov.com/tags/wowchemy/</loc>
     <lastmod>2023-10-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/post/data-visualization/</loc>
+    <loc>https://borisblagov.com/post/data-visualization/</loc>
     <lastmod>2023-10-25T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/tags/hugo-blox/</loc>
+    <loc>https://borisblagov.com/tags/hugo-blox/</loc>
     <lastmod>2023-10-25T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/experience/</loc>
+    <loc>https://borisblagov.com/experience/</loc>
     <lastmod>2023-10-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/tags/javascript/</loc>
+    <loc>https://borisblagov.com/tags/javascript/</loc>
     <lastmod>2023-10-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/teaching/js/</loc>
+    <loc>https://borisblagov.com/teaching/js/</loc>
     <lastmod>2023-10-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/publication_types/9/</loc>
+    <loc>https://borisblagov.com/publication_types/9/</loc>
     <lastmod>2022-06-15T11:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/forecast/forecast_kb_22_2/</loc>
+    <loc>https://borisblagov.com/forecast/forecast_kb_22_2/</loc>
     <lastmod>2022-06-15T11:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/publication_types/3/</loc>
+    <loc>https://borisblagov.com/publication_types/3/</loc>
     <lastmod>2022-06-01T11:00:00+01:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/tags/bayesian-var/</loc>
+    <loc>https://borisblagov.com/tags/bayesian-var/</loc>
     <lastmod>2022-06-01T11:00:00+01:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/tags/cross-sectional-shrinkage/</loc>
+    <loc>https://borisblagov.com/tags/cross-sectional-shrinkage/</loc>
     <lastmod>2022-06-01T11:00:00+01:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/tags/forecasting/</loc>
+    <loc>https://borisblagov.com/tags/forecasting/</loc>
     <lastmod>2022-06-01T11:00:00+01:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/publication/2022_rep_pvar/</loc>
+    <loc>https://borisblagov.com/publication/2022_rep_pvar/</loc>
     <lastmod>2022-06-01T11:00:00+01:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/publication_types/article-journal/</loc>
+    <loc>https://borisblagov.com/publication_types/article-journal/</loc>
     <lastmod>2022-05-13T11:00:00+01:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/tags/dynamic-factor-model/</loc>
+    <loc>https://borisblagov.com/tags/dynamic-factor-model/</loc>
     <lastmod>2022-05-13T11:00:00+01:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/publication/2022_em/</loc>
+    <loc>https://borisblagov.com/publication/2022_em/</loc>
     <lastmod>2022-05-13T11:00:00+01:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/tags/international-economics/</loc>
+    <loc>https://borisblagov.com/tags/international-economics/</loc>
     <lastmod>2022-05-13T11:00:00+01:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/tags/stochastic-volatility/</loc>
+    <loc>https://borisblagov.com/tags/stochastic-volatility/</loc>
     <lastmod>2022-05-13T11:00:00+01:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/tags/mixed-frequency/</loc>
+    <loc>https://borisblagov.com/tags/mixed-frequency/</loc>
     <lastmod>2021-12-13T11:00:00+01:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/tags/narrative-economics/</loc>
+    <loc>https://borisblagov.com/tags/narrative-economics/</loc>
     <lastmod>2021-12-13T11:00:00+01:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/tags/nowcasting-via-media-data/</loc>
+    <loc>https://borisblagov.com/tags/nowcasting-via-media-data/</loc>
     <lastmod>2021-12-13T11:00:00+01:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/publication/2021_rep_narratives/</loc>
+    <loc>https://borisblagov.com/publication/2021_rep_narratives/</loc>
     <lastmod>2021-12-13T11:00:00+01:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/tags/inflation-expectations/</loc>
+    <loc>https://borisblagov.com/tags/inflation-expectations/</loc>
     <lastmod>2021-03-01T11:00:00+01:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/tags/monetary-policy-uncertainty/</loc>
+    <loc>https://borisblagov.com/tags/monetary-policy-uncertainty/</loc>
     <lastmod>2021-03-01T11:00:00+01:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/publication/2021_rep_infexp/</loc>
+    <loc>https://borisblagov.com/publication/2021_rep_infexp/</loc>
     <lastmod>2021-03-01T11:00:00+01:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/tags/time-varying-parameters/</loc>
+    <loc>https://borisblagov.com/tags/time-varying-parameters/</loc>
     <lastmod>2021-03-01T11:00:00+01:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/forecast/forecast_gd_20_3/</loc>
+    <loc>https://borisblagov.com/forecast/forecast_gd_20_3/</loc>
     <lastmod>2020-10-14T10:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/forecast/forecast_kb_20_3/</loc>
+    <loc>https://borisblagov.com/forecast/forecast_kb_20_3/</loc>
     <lastmod>2020-09-15T11:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/post/2020_03_29/</loc>
+    <loc>https://borisblagov.com/post/2020_03_29/</loc>
     <lastmod>2020-04-01T11:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/forecast/forecast_kb_20_1/</loc>
+    <loc>https://borisblagov.com/forecast/forecast_kb_20_1/</loc>
     <lastmod>2020-03-19T11:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/publication_types/2/</loc>
+    <loc>https://borisblagov.com/publication_types/2/</loc>
     <lastmod>2019-08-16T11:00:00+01:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/tags/dsge/</loc>
+    <loc>https://borisblagov.com/tags/dsge/</loc>
     <lastmod>2019-08-16T11:00:00+01:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/publication/2019_eru/</loc>
+    <loc>https://borisblagov.com/publication/2019_eru/</loc>
     <lastmod>2019-08-16T11:00:00+01:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/tags/markov-switching/</loc>
+    <loc>https://borisblagov.com/tags/markov-switching/</loc>
     <lastmod>2019-08-16T11:00:00+01:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/publication/2019_md/</loc>
+    <loc>https://borisblagov.com/publication/2019_md/</loc>
     <lastmod>2019-08-16T11:00:00+01:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/publication/preprint/</loc>
+    <loc>https://borisblagov.com/publication/preprint/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/publication_types/article/</loc>
+    <loc>https://borisblagov.com/publication_types/article/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/tags/large-language-models/</loc>
+    <loc>https://borisblagov.com/tags/large-language-models/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/tags/conferences/</loc>
+    <loc>https://borisblagov.com/tags/conferences/</loc>
     <lastmod>2019-01-21T11:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/post/2019_01_21/</loc>
+    <loc>https://borisblagov.com/post/2019_01_21/</loc>
     <lastmod>2019-01-21T11:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/publication/2018_ee/</loc>
+    <loc>https://borisblagov.com/publication/2018_ee/</loc>
     <lastmod>2018-05-02T11:00:00+01:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/publication/2016_ob/</loc>
+    <loc>https://borisblagov.com/publication/2016_ob/</loc>
     <lastmod>2016-07-06T11:00:00+01:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/tags/var/</loc>
+    <loc>https://borisblagov.com/tags/var/</loc>
     <lastmod>2016-07-06T11:00:00+01:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/publication/journal-article/</loc>
+    <loc>https://borisblagov.com/publication/journal-article/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/tags/source-themes/</loc>
+    <loc>https://borisblagov.com/tags/source-themes/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/tags/ecb/</loc>
+    <loc>https://borisblagov.com/tags/ecb/</loc>
     <lastmod>2015-04-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/tags/interest-rate-pass-through/</loc>
+    <loc>https://borisblagov.com/tags/interest-rate-pass-through/</loc>
     <lastmod>2015-04-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/publication/2015_bis/</loc>
+    <loc>https://borisblagov.com/publication/2015_bis/</loc>
     <lastmod>2015-04-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/publication/conference-paper/</loc>
+    <loc>https://borisblagov.com/publication/conference-paper/</loc>
     <lastmod>2013-07-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/publication_types/paper-conference/</loc>
+    <loc>https://borisblagov.com/publication_types/paper-conference/</loc>
     <lastmod>2013-07-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>

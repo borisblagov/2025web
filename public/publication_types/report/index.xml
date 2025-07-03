@@ -2,37 +2,34 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Report | Boris Blagov&#39;s personal website</title>
-    <link>http://localhost:1313/publication_types/report/</link>
-      <atom:link href="http://localhost:1313/publication_types/report/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://borisblagov.com/publication_types/report/</link>
+      <atom:link href="https://borisblagov.com/publication_types/report/index.xml" rel="self" type="application/rss+xml" />
     <description>Report</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 12 Jun 2025 10:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/media/icon_hu12593946659221199760.png</url>
+      <url>https://borisblagov.com/media/icon_hu12593946659221199760.png</url>
       <title>Report</title>
-      <link>http://localhost:1313/publication_types/report/</link>
+      <link>https://borisblagov.com/publication_types/report/</link>
     </image>
     
     <item>
       <title>Early summer 2025: Global economy under the spell of trade policy</title>
-      <link>http://localhost:1313/forecast/forecast_kb_25_2/</link>
+      <link>https://borisblagov.com/forecast/forecast_kb_25_2/</link>
       <pubDate>Thu, 12 Jun 2025 10:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/forecast/forecast_kb_25_2/</guid>
-      <description>&lt;p&gt;The extent to which the German economy&amp;rsquo;s current problems are structural is demonstrated by the persistence of its weak growth: economic output continued to decline at the end of the year. German exports in particular have fallen sharply, especially deliveries to China. German ex-porters are now losing ground to China for the fourth year in a row. Weak foreign demand is contributing to a further decline in investment in equipment. However, there is also a lack of impetus from the domestic market: Low capacity utilization in many sectors of the economy and the alarmingly high level of uncertainty about the economic environment in Germany are causing companies to postpone investments. Only private consumption increased slightly at the end of the year.&lt;/p&gt;
-&lt;p&gt;Uncertainty is likely to have increased further in the first few months of this year. Firstly, the fact that the federal elections have been brought forward to February 2025 has led to decisions being postponed until then. In addition, the rhetoric and decisions of the US administration, which has been in office since January, have drastically increased international uncertainty and, as a result, the real geopolitical risks have risen considerably. The geopolitical risks have also increased, above all because the US-administration has become less willing to defend Europe.&lt;/p&gt;
-&lt;p&gt;Despite all this, the structural problems of the German economy remain. For example, im-portant decisions on energy and climate policy, which would be suitable for ensuring an effi-cient energy transition, have yet to be taken. It is also not yet clear whether the future governing parties will be able to agree on tangible steps in the areas of digitalization and bureaucracy re-duction. However, the already confirmed plans of the future coalition partners to reform the debt brake so that - apart from a base of one percent of economic output - investments in de-fense are not taken into account when calculating the relevant debt, as well as the creation of a new special fund for infrastructure renewal are likely to have a noticeable effect on overall eco-nomic demand. As a 2/3 majority in the German parliament is required to amend the debt brake, implementation is still uncertain. In addition, the implementation of the measures is likely to take some time, meaning that demand effects are not expected until next year.&lt;/p&gt;
-&lt;p&gt;For this reason, although we are assuming a further increase in defense and investment spending in this forecast, we are assuming a significantly lower total volume than the EUR 900 billion currently discussed. In addition, many measures in other policy areas are now likely to be tackled later. Important framework conditions in energy and climate policy, for example, are likely to be delayed as a result.&lt;/p&gt;
-&lt;p&gt;Against this backdrop, we expect a stagnation of economic activity in the first half of the year and a slightly positive growth rates afterwards. The average for the year is a decline of 0.1%. The recovery is likely to strengthen somewhat in the coming year. It is assumed that the overall eco-nomic uncertainty will gradually decrease. However, this requires the new federal government to present a concept for strengthening economic growth that also includes the economic framework conditions. Another prerequisite is that the tariff conflict with the USA can be re-solved in the course of this year. In this case, private consumption is likely to increase more strongly and the savings rate should fall slightly. With interest rates continuing to fall, invest-ments are also likely to gradually increase again. GDP is likely to increase by an annual average of 1.2% in 2026.
-The labor market indicators suggest that unemployment will increase slightly. With the eco-nomic recovery expected in the second half of 2025, unemployment is likely to fall moderately by the end of the forecast period. The unemployment rate is expected to rise to 6.2% this year and fall to 6.1% next year. Overall, the number of people in employment will also continue to fall slightly in the forecast period - by around 45,000 people this year and by a further 15,000 people next year.&lt;/p&gt;
-&lt;p&gt;The inflation rate has risen continuously since its low of 1.6% in September last year, reach-ing 2.6% in December. There have been signs of a trend reversal since the beginning of this year. The decline is particularly evident when looking at the core rate of inflation (overall index excluding energy and food). This is expected to fall from 3.3% in December to 2.6% in Febru-ary. Overall, inflation is expected to be 2% both in the current year and in 2026.&lt;/p&gt;
-&lt;p&gt;According to the policy measures, fiscal policy in the current year is restrictive. Although there are some expansionary stimuli such as changes to income tax and the Tax Reform Act, the end of measures such as the tax-free inflation compensation premium will have a noticeably restric-tive effect in addition to the increased revenue from higher social security contribution rates. In 2026, the fiscal policy measures are likely to be roughly neutral. However, the upcoming change of government could significantly change the direction of fiscal policy in the coming year.&lt;/p&gt;
+      <guid>https://borisblagov.com/forecast/forecast_kb_25_2/</guid>
+      <description>&lt;p&gt;The global economy is currently under the influence of trade conflicts. Tariffs are burdening trade and industrial production, and the sword of Damocles of high economic uncertainty hangs over the future economic development. The effective US import tariff rate is currently higher than at any time since World War II. With the currently suspended country-specific &amp;ldquo;re-ciprocal&amp;rdquo; tariffs, it would even be higher than at any time since the Great Depression of the 1930s. At the same time, the unpredictability of US trade policy has catapulted economic un-certainty to unprecedented heights.&lt;/p&gt;
+&lt;p&gt;In the first quarter of 2025, the global economy grew moderately, although the effects of the trade conflicts were already being felt. In the run-up to the announced US import tariff increas-es, exports of the euro area and of China increased, and US imports increased, in some cases significantly.
+Commodity prices have fallen substantially over the recent months. With the decline in energy prices, the disinflation process has continued. However, core inflation excluding energy and food prices remains high. In many countries, service prices remain the main drivers of inflation. The central banks of major economies have responded to the varying inflation trends. For ex-ample, the ECB has already lowered its deposit rate four times this year, while the US Federal Reserve has left its key interest rate unchanged since December 2024, likely due to uncertainty regarding the inflationary effects of US import tariffs.&lt;/p&gt;
+&lt;p&gt;The global economy is expected to expand moderately over the forecast period. Growth of 2.5% is expected for the current year and 2.3% for the next. This should be driven by the de-cline in inflation and robust labour markets, strengthening private consumption. Investment is expected to be stimulated by lower real interest rates.&lt;/p&gt;
+&lt;p&gt;Trade policy poses a significant downside risk to the forecast. Fiscal risks are also increasing. Government debt is already high in many countries, and spending pressure is increasing in areas such as defence, investments in the green transition, and the costs associated with an aging population. Geopolitical risks also remain high. The economy would perform better than expected, not least if there is a rapid resolution to the tariff dispute, thus reducing economic and political uncertainty.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Economic Forecast Spring 2025: Export crisis and political uncertainty weigh on German economy</title>
-      <link>http://localhost:1313/forecast/forecast_kb_25_1/</link>
+      <link>https://borisblagov.com/forecast/forecast_kb_25_1/</link>
       <pubDate>Thu, 13 Mar 2025 10:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/forecast/forecast_kb_25_1/</guid>
+      <guid>https://borisblagov.com/forecast/forecast_kb_25_1/</guid>
       <description>&lt;p&gt;The extent to which the German economy&amp;rsquo;s current problems are structural is demonstrated by the persistence of its weak growth: economic output continued to decline at the end of the year. German exports in particular have fallen sharply, especially deliveries to China. German ex-porters are now losing ground to China for the fourth year in a row. Weak foreign demand is contributing to a further decline in investment in equipment. However, there is also a lack of impetus from the domestic market: Low capacity utilization in many sectors of the economy and the alarmingly high level of uncertainty about the economic environment in Germany are causing companies to postpone investments. Only private consumption increased slightly at the end of the year.&lt;/p&gt;
 &lt;p&gt;Uncertainty is likely to have increased further in the first few months of this year. Firstly, the fact that the federal elections have been brought forward to February 2025 has led to decisions being postponed until then. In addition, the rhetoric and decisions of the US administration, which has been in office since January, have drastically increased international uncertainty and, as a result, the real geopolitical risks have risen considerably. The geopolitical risks have also increased, above all because the US-administration has become less willing to defend Europe.&lt;/p&gt;
 &lt;p&gt;Despite all this, the structural problems of the German economy remain. For example, im-portant decisions on energy and climate policy, which would be suitable for ensuring an effi-cient energy transition, have yet to be taken. It is also not yet clear whether the future governing parties will be able to agree on tangible steps in the areas of digitalization and bureaucracy re-duction. However, the already confirmed plans of the future coalition partners to reform the debt brake so that - apart from a base of one percent of economic output - investments in de-fense are not taken into account when calculating the relevant debt, as well as the creation of a new special fund for infrastructure renewal are likely to have a noticeable effect on overall eco-nomic demand. As a 2/3 majority in the German parliament is required to amend the debt brake, implementation is still uncertain. In addition, the implementation of the measures is likely to take some time, meaning that demand effects are not expected until next year.&lt;/p&gt;
@@ -46,9 +43,9 @@ The labor market indicators suggest that unemployment will increase slightly. Wi
     
     <item>
       <title>World Economic Forecast Winter 2024: Global Economy Grows Moderately Amid High Political Uncertainty</title>
-      <link>http://localhost:1313/forecast/forecast_kb_24_4/</link>
+      <link>https://borisblagov.com/forecast/forecast_kb_24_4/</link>
       <pubDate>Sat, 14 Dec 2024 10:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/forecast/forecast_kb_24_4/</guid>
+      <guid>https://borisblagov.com/forecast/forecast_kb_24_4/</guid>
       <description>&lt;p&gt;The global economy maintained its solid growth trajectory this summer, driven primarily by the strong expansion in the USA. Global industrial production picked up significantly in spring and summer, particularly in Asia. Parallel to industrial production, global trade in goods also expanded noticeably until the summer. However, current data suggests that the upturn in industrial production and in global trade is unlikely to
 persist. Industrial production and global trade fell in September. The global purchasing managers&amp;rsquo; index for the manufacturing sector also suggests that the fundamental weakness in industry is continuing.
 The disinflation process has not progressed any further recently. Prices are rising sharply in the services sector, which is why core inflation excluding energy and food is stubbornly persistent.&lt;/p&gt;
@@ -58,9 +55,9 @@ The disinflation process has not progressed any further recently. Prices are ris
     
     <item>
       <title>Economic Knock-On Effects of Russia’s Geopolitical Risk on Advanced Economies: A Global VAR Approach</title>
-      <link>http://localhost:1313/publication/2024_bfd/</link>
+      <link>https://borisblagov.com/publication/2024_bfd/</link>
       <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publication/2024_bfd/</guid>
+      <guid>https://borisblagov.com/publication/2024_bfd/</guid>
       <description></description>
     </item>
     

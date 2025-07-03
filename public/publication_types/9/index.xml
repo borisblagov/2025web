@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>9 | Boris Blagov&#39;s personal website</title>
-    <link>http://localhost:1313/publication_types/9/</link>
-      <atom:link href="http://localhost:1313/publication_types/9/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://borisblagov.com/publication_types/9/</link>
+      <atom:link href="https://borisblagov.com/publication_types/9/index.xml" rel="self" type="application/rss+xml" />
     <description>9</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 15 Jun 2022 11:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/media/icon_hu12593946659221199760.png</url>
+      <url>https://borisblagov.com/media/icon_hu12593946659221199760.png</url>
       <title>9</title>
-      <link>http://localhost:1313/publication_types/9/</link>
+      <link>https://borisblagov.com/publication_types/9/</link>
     </image>
     
     <item>
       <title>Spring Forecast 2022: Renewed pressure delays economic recovery in Germany once more</title>
-      <link>http://localhost:1313/forecast/forecast_kb_22_2/</link>
+      <link>https://borisblagov.com/forecast/forecast_kb_22_2/</link>
       <pubDate>Wed, 15 Jun 2022 11:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/forecast/forecast_kb_22_2/</guid>
+      <guid>https://borisblagov.com/forecast/forecast_kb_22_2/</guid>
       <description>&lt;p&gt;Economic activity in Germany has not improved markably in recent quarters. Following a decline in GDP in the fourth quarter of last year, output expanded only slightly in the first quarter. The weak economic recovery at the beginning of this year is likely to be due in significant part to the sharp rise in inflation, which has intensified again since the start of the war in Ukraine. The supply bottlenecks which have been delaying recovery from the economic consequences of the pandemic since last year temporarily eased somewhat at the beginning of this year. In the meantime, however, the problems with international logistics have been exacerbated again by the recent flare-up of infection in China.&lt;/p&gt;
 &lt;p&gt;The further course of economic recovery depends to a large extent on the development of inflation. It is becoming apparent that inflation will only weaken gradually. For exam-ple, the price increases for some raw materials, such as crude oil, are now easing. How-ever, prices for gas, which private households have to pay, are likely to continue to rise sharply in the coming months. Overall, consumer prices are expected to rise by 6.9% on average this year. In the coming year, we expect inflation to fall to 2.6% on average. The core rate is expected to be 4.1% and 2.3% respectively in the two years. Accordingly, the burdens on businesses and private households are expected to ease during the forecast period. The supply bottlenecks which continue to hamper production in the manufactur-ing sector will gradually ease in the second half of the year.&lt;/p&gt;
 &lt;p&gt;Against this background, GDP is expected to expand by 1.9% this year. We are thus revising our March forecast downward by 0.6% points. The main reason is that inflation has risen significantly more than expected in the previous forecast. For the coming year we expect GDP to increase by 2.7%.&lt;/p&gt;
@@ -27,9 +27,9 @@
     
     <item>
       <title>Joint Economic Forecast Fall 2020: Recovery loses momentum -Economy and politics further under the signs of the pandemic</title>
-      <link>http://localhost:1313/forecast/forecast_gd_20_3/</link>
+      <link>https://borisblagov.com/forecast/forecast_gd_20_3/</link>
       <pubDate>Wed, 14 Oct 2020 10:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/forecast/forecast_gd_20_3/</guid>
+      <guid>https://borisblagov.com/forecast/forecast_gd_20_3/</guid>
       <description>&lt;p&gt;The global economy will contract by 4.0% this year and the rebound is expected at 5.6% in 2021. In Europe, we expect the downturn to be more severe than the world, with the current projection for the EU27 economic growth standing at -7.0%. This is due in part to the worsening outlook of the pandemic in some of the major countries, notably France, Spain and the Netherlands.&lt;/p&gt;
  &lt;div style = &#34;text-align: left;&#34;&gt;
     &lt;embed style=&#34;border: none;&#34; src=&#34;basic-offline2.html&#34; dpi=&#34;600&#34; width=100% height=&#34;550px&#34; /&gt;
@@ -38,7 +38,7 @@
 
 
 
-&lt;div id=&#34;chart-768231945&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-594183627&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -56,7 +56,7 @@
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-768231945&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-594183627&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -67,9 +67,9 @@
     
     <item>
       <title>Fall Forecast 2020: Global economy recovers from a historic collapse</title>
-      <link>http://localhost:1313/forecast/forecast_kb_20_3/</link>
+      <link>https://borisblagov.com/forecast/forecast_kb_20_3/</link>
       <pubDate>Tue, 15 Sep 2020 11:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/forecast/forecast_kb_20_3/</guid>
+      <guid>https://borisblagov.com/forecast/forecast_kb_20_3/</guid>
       <description>&lt;p&gt;The global economy experienced in the second quarter its worst decline since the Great Depression of the 1930s. Overall economic activity in the industrialized countries was 9.8% lower than in the first quarter. World trade also collapsed in the spring. At its lowest point in May, it was 17.2% below the level before the pandemic outbreak in December 2019.&lt;/p&gt;
 &lt;p&gt;Economic policy has adopted extensive measures to support the economy. Monetary policy has lowered interest rates and expanded asset purchase. Fiscal policy adopted extensive measures to support incomes of the private sector.&lt;/p&gt;
 &lt;p&gt;The latest monthly indicators on industrial production, consumer, and business sentiment suggest a strong recovery of the economic activity over the summer. The beginning of this rebound generally coincides with the decline of new infections and the associated gradual lifting of infection control measures. In June, the volume of world trade recovered significantly and the RWI/ISL container index rose noticeably in July. Daily mobility data also point to a gradual normalization of economic activity in many economic sectors. Tourism, however, is a major exception.&lt;/p&gt;
@@ -80,9 +80,9 @@
     
     <item>
       <title>Economic development abroad: COVID-19 keeps the world economy in suspense</title>
-      <link>http://localhost:1313/forecast/forecast_kb_20_1/</link>
+      <link>https://borisblagov.com/forecast/forecast_kb_20_1/</link>
       <pubDate>Thu, 19 Mar 2020 11:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/forecast/forecast_kb_20_1/</guid>
+      <guid>https://borisblagov.com/forecast/forecast_kb_20_1/</guid>
       <description>&lt;p&gt;Since early 2020, the world economy is in the grip of the COVID-19 pandemic. Initially, Asia  was  particularly  affected.  In  China,  economic  activity  declined  significantly.  The shock transmitted to other Asian countries via value chains. Some countries were affected by the absence of Chinese tourists. Since February, the corona virus also spread in Europe and the USA at such a pace that some countries took drastic measures to contain the pandemic. A curfew was imposed in many European countries and trade activities were reduced to basic supplies. In addition, many countries have closed their borders to passenger traffic and suspended air traffic. All this is severely restricting economic activity.&lt;/p&gt;
 &lt;div class=&#34;flourish-embed flourish-chart&#34; data-src=&#34;visualisation/12704155&#34;&gt;&lt;script src=&#34;https://public.flourish.studio/resources/embed.js&#34;&gt;&lt;/script&gt;&lt;/div&gt;
 </description>
