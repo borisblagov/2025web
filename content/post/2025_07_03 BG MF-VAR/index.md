@@ -16,14 +16,14 @@ I've always wanted to implement those models for Bulgaria, and with joining the 
 
 I have recently implemented the mixed-frequency method of [Joshua Chan, Aubrey Poon, and Dan Zhu (2023), High-dimensional conditionally Gaussian state space models with missing data](https://www.sciencedirect.com/science/article/pii/S0304407623001628?via%3Dihub) in Julia and Matlab with a hierarchical Minnesota based prior with and without stochastic volatility. 
 
-I am presenting here the homoskedastic version, estiamted with growth rates:
+I am presenting here the homoskedastic version, estimated in growth rates:
 ![Monthly estimates for Bulgarian GDP in growth rates](BGMFVAR_250703.svg "Monthly estimates for Bulgarian GDP in growth rates")
 
 
 
 ## Data
 
-The data in the model is in quarterly growth rates and starts in 2005.
+Here is a snapshot of the variables in the model, which all start in 2005:
 
 | **Variable**      | **Abbreviation** | **Transformation** | **Source** |
 |----------------------------|---------------------------|-----------------------------|---------------------|
@@ -43,10 +43,7 @@ The data in the model is in quarterly growth rates and starts in 2005.
 | GDP                        |                           | SA, in growth rates         | Eurostat            |
 
 
-The currently available high frequency indicators for Q2 in the beginning of July are mostly surveys, financial data and prices. From the hard indicators we have industrial prodcution, construction, and retail for April, as well as tourist data for April and May.
-
-Here is how the "ragged edge" of the data looks like
-
+The currently available high frequency indicators for Q2 in the beginning of July are mostly surveys, financial data and prices. From the hard indicators we have industrial prodcution, construction, and retail for April, as well as tourist data for April and May. This is how the currently available data ("ragged edge") looks like:
 
 {{< table path="dataM_BG_test.csv" header="true" caption="Ragged edge for the BG MF-VAR model (untransformed)" >}}
 
@@ -55,7 +52,7 @@ For the second quarter, the nowcast estimate suggests a slowdown of Bulgarian GD
 ![Quarterly growth rate estimates](QoQ.png "caption")
 
 
-I plan to publish regularly these nowcasts, as well as compile a paper with the model and comparison of the out-of-sample forecast performance of the model for various speicifications (with and without stochastic volatilty). If you want, you can download the monthly series ([xlsx](BGMFVAR_250703.xlsx), [csv](BGMFVAR_250703.csv)) and if you are interested, feel free to write me an [email](mailto:boris.blagov@rwi-essen.de).
+I plan to publish regularly these nowcasts, as well as compile a paper with the model and comparison of the out-of-sample forecast performance of the model for various speicifications (with and without stochastic volatilty). You can download the monthly GDP series with 68% and 95% quantiles ([xlsx](BGMFVAR_250703.xlsx), [csv](BGMFVAR_250703.csv)) and if you are interested in other details, do get in touch via [email](mailto:boris.blagov@rwi-essen.de).
 
 
 
