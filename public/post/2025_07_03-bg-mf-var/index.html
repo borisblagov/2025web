@@ -1,9 +1,9 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: July 3, 2025 --><html lang="en-us" dir="ltr"
+<!-- Last Published: September 11, 2025 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="light">
   
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -44,7 +44,7 @@
   <meta name="description" content="A mixed-frequency VAR for Bulgaria" />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://borisblagov.com/post/2025_07_03-bg-mf-var/" />
+  <link rel="alternate" hreflang="en-us" href="http://localhost:1313/post/2025_07_03-bg-mf-var/" />
 
   
   
@@ -164,7 +164,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hu11062540949591093125.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu6228527649060173663.png" />
 
-  <link rel="canonical" href="https://borisblagov.com/post/2025_07_03-bg-mf-var/" />
+  <link rel="canonical" href="http://localhost:1313/post/2025_07_03-bg-mf-var/" />
 
   
   
@@ -186,10 +186,10 @@
   <meta property="twitter:card" content="summary_large_image" />
   
   <meta property="og:site_name" content="Boris Blagov&#39;s personal website" />
-  <meta property="og:url" content="https://borisblagov.com/post/2025_07_03-bg-mf-var/" />
+  <meta property="og:url" content="http://localhost:1313/post/2025_07_03-bg-mf-var/" />
   <meta property="og:title" content="Monthly estimates for Bulgarian GDP for nowcasting | Boris Blagov&#39;s personal website" />
-  <meta property="og:description" content="A mixed-frequency VAR for Bulgaria" /><meta property="og:image" content="https://borisblagov.com/post/2025_07_03-bg-mf-var/featured.jpg" />
-    <meta property="twitter:image" content="https://borisblagov.com/post/2025_07_03-bg-mf-var/featured.jpg" /><meta property="og:locale" content="en-us" />
+  <meta property="og:description" content="A mixed-frequency VAR for Bulgaria" /><meta property="og:image" content="http://localhost:1313/post/2025_07_03-bg-mf-var/featured.jpg" />
+    <meta property="twitter:image" content="http://localhost:1313/post/2025_07_03-bg-mf-var/featured.jpg" /><meta property="og:locale" content="en-us" />
   
     
       <meta
@@ -234,6 +234,7 @@
   
 
 
+  
   
   
   
@@ -772,8 +773,8 @@
   
   <script
     defer
-    src="/js/hugo-blox-en.min.47736f84e20cae1bb2224dc4605239689e913811575e32b5f86a700ee9d6529d.js"
-    integrity="sha256-R3NvhOIMrhuyIk3EYFI5aJ6ROBFXXjK1&#43;GpwDunWUp0="
+    src="/js/hugo-blox-en.min.js"
+    integrity=""
   ></script>
 
   
@@ -1066,6 +1067,14 @@
             </li>
           </ul>
   
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/post/2025_11_09-bg-mf-var/"
+    
+  >Monthly estimates for Bulgarian GDP for nowcasting
+    </a>
               
             </li><li class="flex flex-col "><a
     class="hb-sidebar-custom-link
@@ -1499,9 +1508,9 @@
       
       
       
-      <div class="article-header article-container featured-image-wrapper mt-4 mb-16" style="max-width: 720px; max-height: 440px;">
+      <div class="article-header article-container featured-image-wrapper mt-4 mb-16" style="max-width: 720px; max-height: 474px;">
         <div style="position: relative">
-          <img src="/post/2025_07_03-bg-mf-var/featured_hu7035364677979393481.webp" width="720" height="440" alt="" class="featured-image">
+          <img src="/post/2025_07_03-bg-mf-var/featured_hu17666336732962832392.webp" width="720" height="474" alt="" class="featured-image">
           
         </div>
       </div>
@@ -1514,7 +1523,7 @@
         <p>Since joining the RWI in 2016 I have been responsible for forecasting and nowcasting the euro area countries. To this aim I have set up a variety of state-of-the-art methods that we have been using both internally and externally. For example, I oversee our Mixed-frequency VAR model for German GDP (quarterly data disaggregated into monthly), as well as our model for the state of Northrheine-Westfalia (yearly data disaggregated into quarterly), both of which, we publish regularly in our forecasts.</p>
 <p>I&rsquo;ve always wanted to implement those models for Bulgaria, and with joining the Euro in 2026, I think that there is no better time to do so.</p>
 <p>I have recently implemented the mixed-frequency method of <a href="https://www.sciencedirect.com/science/article/pii/S0304407623001628?via%3Dihub" target="_blank" rel="noopener">Joshua Chan, Aubrey Poon, and Dan Zhu (2023), High-dimensional conditionally Gaussian state space models with missing data</a> in Julia and Matlab with a hierarchical Minnesota based prior with and without stochastic volatility.</p>
-<p>I am presenting here the homoskedastic version, estiamted with growth rates:
+<p>I am presenting here the homoskedastic version, estimated in growth rates:
 
 
 
@@ -1541,7 +1550,7 @@
     </figcaption></figure>
 </p>
 <h2 id="data">Data</h2>
-<p>The data in the model is in quarterly growth rates and starts in 2005.</p>
+<p>Here is a snapshot of the variables in the model, which all start in 2005:</p>
 <table>
   <thead>
       <tr>
@@ -1638,8 +1647,7 @@
       </tr>
   </tbody>
 </table>
-<p>The currently available high frequency indicators for Q2 in the beginning of July are mostly surveys, financial data and prices. From the hard indicators we have industrial prodcution, construction, and retail for April, as well as tourist data for April and May.</p>
-<p>Here is how the &ldquo;ragged edge&rdquo; of the data looks like</p>
+<p>The currently available high frequency indicators for Q2 in the beginning of July are mostly surveys, financial data and prices. From the hard indicators we have industrial prodcution, construction, and retail for April, as well as tourist data for April and May. This is how the currently available data (&ldquo;ragged edge&rdquo;) looks like:</p>
 
 
 
@@ -2037,7 +2045,7 @@
       caption
     </figcaption></figure>
 </p>
-<p>I plan to publish regularly these nowcasts, as well as compile a paper with the model and comparison of the out-of-sample forecast performance of the model for various speicifications (with and without stochastic volatilty). If you want, you can download the monthly series (<a href="BGMFVAR_250703.xlsx">xlsx</a>, <a href="BGMFVAR_250703.csv">csv</a>) and if you are interested, feel free to write me an <a href="mailto:boris.blagov@rwi-essen.de">email</a>.</p>
+<p>I plan to publish regularly these nowcasts, as well as compile a paper with the model and comparison of the out-of-sample forecast performance of the model for various speicifications (with and without stochastic volatilty). You can download the monthly GDP series with 68% and 95% quantiles (<a href="BGMFVAR_250703.xlsx">xlsx</a>, <a href="BGMFVAR_250703.csv">csv</a>) and if you are interested in other details, do get in touch via <a href="mailto:boris.blagov@rwi-essen.de">email</a>.</p>
 
       </div>
 
@@ -2072,7 +2080,7 @@
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fborisblagov.com%2Fpost%2F2025_07_03-bg-mf-var%2F&amp;text=Monthly&#43;estimates&#43;for&#43;Bulgarian&#43;GDP&#43;for&#43;nowcasting"
+    href="https://twitter.com/intent/tweet?url=http%3A%2F%2Flocalhost%3A1313%2Fpost%2F2025_07_03-bg-mf-var%2F&amp;text=Monthly&#43;estimates&#43;for&#43;Bulgarian&#43;GDP&#43;for&#43;nowcasting"
     title="X"
     aria-label="X"
     id="share-link-x"
@@ -2090,7 +2098,7 @@
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fborisblagov.com%2Fpost%2F2025_07_03-bg-mf-var%2F&amp;t=Monthly&#43;estimates&#43;for&#43;Bulgarian&#43;GDP&#43;for&#43;nowcasting"
+    href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Flocalhost%3A1313%2Fpost%2F2025_07_03-bg-mf-var%2F&amp;t=Monthly&#43;estimates&#43;for&#43;Bulgarian&#43;GDP&#43;for&#43;nowcasting"
     title="Facebook"
     aria-label="Facebook"
     id="share-link-facebook"
@@ -2110,7 +2118,7 @@
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="mailto:?subject=Monthly%20estimates%20for%20Bulgarian%20GDP%20for%20nowcasting&amp;body=https%3A%2F%2Fborisblagov.com%2Fpost%2F2025_07_03-bg-mf-var%2F"
+    href="mailto:?subject=Monthly%20estimates%20for%20Bulgarian%20GDP%20for%20nowcasting&amp;body=http%3A%2F%2Flocalhost%3A1313%2Fpost%2F2025_07_03-bg-mf-var%2F"
     title="Email"
     aria-label="Email"
     id="share-link-email"
@@ -2128,7 +2136,7 @@
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fborisblagov.com%2Fpost%2F2025_07_03-bg-mf-var%2F&amp;title=Monthly&#43;estimates&#43;for&#43;Bulgarian&#43;GDP&#43;for&#43;nowcasting"
+    href="https://www.linkedin.com/shareArticle?url=http%3A%2F%2Flocalhost%3A1313%2Fpost%2F2025_07_03-bg-mf-var%2F&amp;title=Monthly&#43;estimates&#43;for&#43;Bulgarian&#43;GDP&#43;for&#43;nowcasting"
     title="LinkedIn"
     aria-label="LinkedIn"
     id="share-link-linkedin"
@@ -2146,7 +2154,7 @@
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="whatsapp://send?text=Monthly&#43;estimates&#43;for&#43;Bulgarian&#43;GDP&#43;for&#43;nowcasting%20https%3A%2F%2Fborisblagov.com%2Fpost%2F2025_07_03-bg-mf-var%2F"
+    href="whatsapp://send?text=Monthly&#43;estimates&#43;for&#43;Bulgarian&#43;GDP&#43;for&#43;nowcasting%20http%3A%2F%2Flocalhost%3A1313%2Fpost%2F2025_07_03-bg-mf-var%2F"
     title="WhatsApp"
     aria-label="WhatsApp"
     id="share-link-whatsapp"
@@ -2197,7 +2205,7 @@
       Authors
     </div>
     <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
-      <a href="https://borisblagov.com/" class="no-underline">
+      <a href="http://localhost:1313/" class="no-underline">
       Boris Blagov
       </a>
     </div>
@@ -2329,15 +2337,15 @@
     </div>
     <div class="">
       
-        <a class="group flex text-right no-underline" href="/post/2025_05_20-relaunch/">
+        <a class="group flex text-right no-underline" href="/post/2025_11_09-bg-mf-var/">
           <span class="flex flex-col">
             <span
               class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-            >Relaunching the webpage</span
+            >Monthly estimates for Bulgarian GDP for nowcasting</span
             >
             <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
               
-                May 20, 2025
+                Jul 3, 2025
               
             </span>
           </span>
