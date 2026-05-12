@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Time-Varying Parameters | Boris Blagov&#39;s personal website</title>
-    <link>http://localhost:1313/tags/time-varying-parameters/</link>
-      <atom:link href="http://localhost:1313/tags/time-varying-parameters/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://borisblagov.com/tags/time-varying-parameters/</link>
+      <atom:link href="https://borisblagov.com/tags/time-varying-parameters/index.xml" rel="self" type="application/rss+xml" />
     <description>Time-Varying Parameters</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 Mar 2021 11:00:00 +0100</lastBuildDate>
     <image>
-      <url>http://localhost:1313/media/icon_hu12593946659221199760.png</url>
+      <url>https://borisblagov.com/media/icon_hu12593946659221199760.png</url>
       <title>Time-Varying Parameters</title>
-      <link>http://localhost:1313/tags/time-varying-parameters/</link>
+      <link>https://borisblagov.com/tags/time-varying-parameters/</link>
     </image>
     
     <item>
       <title>Monetary policy uncertainty and inflation expectations</title>
-      <link>http://localhost:1313/publication/2021_rep_infexp/</link>
+      <link>https://borisblagov.com/publication/2021_rep_infexp/</link>
       <pubDate>Mon, 01 Mar 2021 11:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/publication/2021_rep_infexp/</guid>
+      <guid>https://borisblagov.com/publication/2021_rep_infexp/</guid>
       <description></description>
     </item>
     

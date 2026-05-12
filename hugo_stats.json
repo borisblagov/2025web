@@ -548,14 +548,17 @@
       "about-me",
       "background",
       "blog",
-      "chart-149237856",
-      "chart-461539782",
+      "chart-568931427",
+      "chart-642578913",
       "charts",
       "code",
+      "combining-the-2005-2010-and-the-2015-2021-indices",
+      "combining-the-2015-and-2021-indices",
       "data",
       "data-frames",
       "diagrams",
       "did-you-find-this-page-helpful-consider-sharing-it-",
+      "download",
       "establishing-the-counterfactual-scenario-without-covid-19",
       "figure-caption",
       "figure-monthly-estimates-for-bulgarian-gdp-in-growth-rates",
@@ -574,6 +577,7 @@
       "research",
       "search",
       "search-wrapper",
+      "seasonal-adjustment-of-2005-and-2010-indices",
       "section-collection",
       "section-resume-awards",
       "section-resume-biography-3",
@@ -594,7 +598,9 @@
       "test-students",
       "the-effects-of-covid-19-on-the-italian-economy",
       "top",
-      "video"
+      "updating",
+      "video",
+      "weight-adjustment"
     ]
   }
 }
