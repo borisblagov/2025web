@@ -2,6 +2,6 @@
     max-width: 80%;
 }
 
-.article-container {
+.publication-container {
     max-width: 960px !important; /* Default is ~720px. Adjust higher (e.g. 1100px or 100%) if desired */
   }
