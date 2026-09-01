@@ -25,7 +25,7 @@ publication_types: ["report"]
 publication: "*Ruhr Economic Papers, 1224*(1)"
 publication_short: ""
 
-abstract: This paper introduces a mixed-frequency Gaussian state-space Framework that embeds forecast reconciliation into Bayesian VAR modeling for hierarchical macroeconomic data. Using precision-based sampling to generate high-frequency latent estimates, we construct a consistent proxy for the forecast-error covariance matrix, enabling optimal reconciliation with short datasets. We prove the asymptotic convergence of this estimator and show that forecast reconciliation can be formally derived as a special case of conditional forecasting, allowing straightforward implementation with Standard state-space algorithms. We derive reconciled impulse response functions (rIRFs) that ensure bottom-level structural responses aggregate exactly to the top-level impulse response. Applying the framework to UK and German regional economic data, we demonstrate improvements in the forecast accuracy alongside structurally consistent impulse responses
+abstract: This paper introduces a mixed-frequency Gaussian state-space Framework that embeds forecast reconciliation into Bayesian VAR modeling for hierarchical macroeconomic data. Using precision-based sampling to generate high-frequency latent estimates, we construct a consistent proxy for the forecast-error covariance matrix, enabling optimal reconciliation with short datasets. We prove the asymptotic convergence of this estimator and show that forecast reconciliation can be formally derived as a special case of conditional forecasting, allowing straightforward implementation with Standard state-space algorithms. We derive reconciled impulse response functions (rIRFs) that ensure bottom-level structural responses aggregate exactly to the top-level impulse response. Applying the framework to UK and German regional economic data, we demonstrate improvements in the forecast accuracy alongside structurally consistent impulse responses.
 
 # Summary. An optional shortened abstract.
 summary: 
@@ -42,7 +42,7 @@ url_code: ''
 url_dataset: ''
 url_poster: ''
 url_project: ''
-url_slides: 'Blagov_Krause_2025_IAAEslides.pdf'
+url_slides: Blagov_Krause_2025_IAAEslides.pdf
 url_source: ''
 url_video: ''
 
