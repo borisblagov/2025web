@@ -13,11 +13,11 @@ publishDate: "2022-06-16T11:00:00+01:00"
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["3"]
+publication_types: ["Journal article"]
 
 # Publication name and optional abbreviated publication name.
-publication: "Working paper coming soon"
-publication_short: "_Working paper coming soon_ "
+publication: "Ruhr Economic Papers"
+publication_short: ""
 
 abstract: We propose a flexible prior for vectorautoregressions (VARs) which can exploit the panel structure of macroeconomic time series and at the same time provide shrinkage towards zero in order to address overfitting concerns. The prior is flexible as it allows for parameter pooling across both a country dimension (two countries are completely alike) and/or variable dimension (dynamics of two variables across countries are alike). The usefulness of our approach is demonstrated via a Monte Carlo study and an empirical application using a large euro area data set. We find that cross country information helps deliver sharper parameter inference that improves point and density forecasts as well as structural analysis through lower estimation uncertainty. Also it is beneficial to have both pooling and shrinkage instead of only pooling.
 
@@ -29,16 +29,16 @@ tags:
 - Bayesian VAR
 - Cross-sectional shrinkage
 - Forecasting
-featured: true
+featured: false
 
 # links:
 # - name: ""
 #   url: ""
 links:
-- name: "Working paper (coming soon)"
+- name: "Working paper"
   url: 
 url_pdf: ''
-url_code: 'https://sites.google.com/view/janprueser/computer-code'
+url_code: ''
 url_poster: ''
 url_project: ''
 url_slides: 'Prueser_Blagov_2022_poolingVAR_Slides.pdf'
@@ -83,4 +83,4 @@ slides: ""
 ---
 
 
-The code for the model will be available on the webpage of my co-author Dr. Jan Prüser - https://sites.google.com/view/janprueser/computer-code.
+This paper has been published in Economic Modelling, see [here](2026_PB).
