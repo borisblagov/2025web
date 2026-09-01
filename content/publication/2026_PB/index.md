@@ -19,7 +19,7 @@ publishDate: "2026-02-31T00:00:00Z"
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
 # Enter a publication type from the CSL standard.
-publication_types: ["article"]
+publication_types: ["Journal article"]
 
 # Publication name and optional abbreviated publication name.
 publication: "Economic Modelling Vol 160, 107618"
@@ -83,4 +83,3 @@ We have three applications that show the strengths of our method and here are th
 2. Monte Carlo experiments (three DGPs, from similar to identical countries): Zero shrinkage and pooling each reduce estimation variance relative to a flat prior, and combining both further increases precision. When countries are similar, pooling introduces only a small bias while delivering large variance reductions.
 3. Forecasting (15 countries, 1979Q2–2019Q4, horizons up to eight steps ahead): The combination of zero shrinkage and pooling outperforms the Minnesota-prior benchmark in most cases for GDP, inflation, and interest rates — and substantially outperforms popular panel VAR specifications with pooling priors. Approaches that rely on pooling alone, by contrast, often underperform the simple single-country Minnesota VAR, underscoring the importance of zero shrinkage to mitigate overfitting.
 
-You can find the code to use it for your own research on my github page [here](https://github.com/borisblagov/Blagov_Prueser_2026_Replication). There is also an older version in the form of a working paper [here](2026_REP_pVAR).
