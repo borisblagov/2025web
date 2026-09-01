@@ -2,6 +2,8 @@
     max-width: 80%;
 }
 
-.publication-container {
-    max-width: 960px !important; /* Default is ~720px. Adjust higher (e.g. 1100px or 100%) if desired */
-  }
+.max-w-prose, 
+.max-w-3xl, 
+.max-w-4xl {
+  max-width: 1000px !important;
+}
