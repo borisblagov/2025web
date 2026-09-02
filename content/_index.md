@@ -64,7 +64,7 @@ sections:
       filters:
         author: ""
         category: ""
-        tag: "nowcast"
+        tag: ""
         exclude_featured: false
         exclude_future: true
         exclude_past: false
